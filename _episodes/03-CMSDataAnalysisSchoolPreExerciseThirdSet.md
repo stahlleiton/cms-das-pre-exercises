@@ -86,7 +86,7 @@ If you do not have the first attribute line listed above, you have not completed
 
 > ## Question 10
 > Copy the output corresponding to the text in the output box above. <br>
-> For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
+> For CMSDAS@CERN 2023 please submit your answers for the [CMSDAS@CERN {{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
 
