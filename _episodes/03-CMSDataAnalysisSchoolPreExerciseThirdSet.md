@@ -38,15 +38,15 @@ keypoints:
 
 > ## Question
 > Questions for each exercise are in boxes such as this. <br>
-For CMSDAS@CERN 2023 please submit your answers for the [CMSDAS@CERN Google Form third set][Set3_form].
+For CMSDAS@CERN {{ site.year }} please submit your answers for the [CMSDAS@CERN Google Form third set][Set3_form].
 {: .challenge}
 
 
 > ## Support
-> There is a dedicated Mattermost team, called CMSDAS@CERN 2023,
+> There is a dedicated Mattermost team, called CMSDAS@CERN {{ site.year }},
 > setup to facilitate communication and discussions via live chat
 > (which is also archived). You will need your CERN login credentials
-> (SSO) and you will need to join the private CMSDAS@CERN 2023
+> (SSO) and you will need to join the private CMSDAS@CERN {{ site.year }}
 > team in order to be able to see (or find using the search
 > channels functionality) the channels setup for communications
 > related to the school. The sign-up link is
@@ -86,7 +86,7 @@ If you do not have the first attribute line listed above, you have not completed
 
 > ## Question 10
 > Copy the output corresponding to the text in the output box above. <br>
-> For CMSDAS@CERN 2023 please submit your answers for the [CMSDAS@CERN {{ site.year }} Google Form third set][Set3_form].
+> For CMSDAS@CERN {{ site.year }} please submit your answers for the [CMSDAS@CERN {{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
 
