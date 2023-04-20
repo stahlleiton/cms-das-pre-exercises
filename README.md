@@ -8,7 +8,7 @@ This set of pre-exercises was originally created by the Fermi National Accelerat
 
 A dedicated mattermost chat for troubleshooting can be found in the general CMSDAS@CERN 2023 [mattermost team](https://mattermost.web.cern.ch/cmsdascern2023/channels/pre-exercises).
 
-This tutorial was updated for CMS DAS 2023 @CERN by:
+This tutorial was updated for CMSDAS@CERN 2023 by:
 
 * [Afiq Anuar](mailto:)
 * [Andris Potrebko](mailto:)
