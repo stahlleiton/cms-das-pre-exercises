@@ -23,31 +23,22 @@ keypoints:
 ---
 
 # Introduction
- This is the third set of CMSDAS exercises. The purpose of these exercises are for the workshop attendees to become familiar with the basic Grid tools used in CMS for user analysis. Please run and complete each of these exercises. However, unlike the previous sets of exercises, **this set will take considerably longer**. Having your storage space set up may take several days, Grid jobs run with some latency, and there can be problems. You should **set aside about a week** to complete these five exercises. The actual effort required is not the whole week but a few hours (more than the previous two sets). If, at any time problems are encountered with the exercise please e-mail [CMSDASATLPC@fnal.gov](mailto:CMSDASATLPC@fnal.gov) with a detailed description of your problem. For CRAB questions unrelated to passing these exercises, to send feedback and ask for support in case of CRAB related problems, please consult the [CRAB troubleshooting twiki](https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3Troubleshoot). All CRAB users should subscribe to the very useful [hn-cms-computing-tools@cern.ch hypernews forum](mailto:hn-cms-computing-tools@cern.ch).
+ This is the third set of CMSDAS exercises. The purpose of these exercises are for the workshop attendees to become familiar with the basic Grid tools used in CMS for user analysis. Please run and complete each of these exercises. However, unlike the previous sets of exercises, **this set will take considerably longer**. Having your storage space set up may take several days, Grid jobs run with some latency, and there can be problems. You should **set aside about a week** to complete these five exercises. The actual effort required is not the whole week but a few hours (more than the previous two sets). If, at any time problems are encountered with the exercise please e-mail [cmsdas-cern-organizers@cern.ch](mailto:cmsdas-cern-organizers@cern.ch) with a detailed description of your problem. For CRAB questions unrelated to passing these exercises, to send feedback and ask for support in case of CRAB related problems, please consult the [CRAB troubleshooting twiki](https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3Troubleshoot). All CRAB users should subscribe to the very useful [hn-cms-computing-tools@cern.ch hypernews forum](mailto:hn-cms-computing-tools@cern.ch).
 
 > ## Note
-> **This section assumes that you have an account on the LPC computers
-> at FNAL.** How to get one is explained [here]({{ page.root }}{% link setup.md %}). However,
-> those familiar with the CERN computing environment and somewhat
-> familiar with CRAB can answer all the questions running at CERN
-> only. For CMSDAS, we recommend using a LPC account at FNAL, and
-> having your write access to T3\_US\_FNALLPC setup. For
-> T3\_US\_FNALLPC, you can get your EOS area mapped to your grid
-> certificate by following these instructions to do a CMS Storage
-> Space Request. For this particular exercise, you will also need to
-> have **access to lxplus at CERN.** Learn more about lxplus
+> **This section assumes that you have access to lxplus at CERN.** Learn more about lxplus
 > [here](https://information-technology.web.cern.ch/services/lxplus-service)
 > and the [lxplus knowledge guide](https://lxplusdoc.web.cern.ch/).
 >
 > Later on, you can check with your university contact for Tier 2 or Tier 3 storage area. Once you are granted the write permission to the specified site, for later analysis you can use CRAB as the below exercise but store the output to your Tier 2 or Tier 3 storage area.
 >
-> AGAIN: To perform this set of exercises, an LPC account, lxplus access, Grid Certificate, and CMS VO membership are required. You should already have these things, but if not, follow these instructions from the [first set of exercises]({{ page.root }}{% link _episodes/01-CMSDataAnalysisSchoolPreExerciseFirstSet.md %}).
+> AGAIN: To perform this set of exercises, lxplus access, Grid Certificate, and CMS VO membership are required. You should already have these things, but if not, follow these instructions from the [first set of exercises]({{ page.root }}{% link _episodes/01-CMSDataAnalysisSchoolPreExerciseFirstSet.md %}).
 >
 {: .callout}
 
 > ## Question
 > Questions for each exercise are in boxes such as this. <br>
-For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
+For CMSDAS@CERN 2023 please submit your answers for the [CMSDAS@CERN Google Form third set][Set3_form].
 {: .challenge}
 
 
@@ -995,9 +986,9 @@ In the example of that other json file, the total recorded luminosity for those 
 Note also that all CMS members using the Grid subscribe to the [Grid Annoucements CMS HyperNews forum](https://hypernews.cern.ch/HyperNews/CMS/get/gridAnnounce.html). Important CRAB announcements will be announced on the [CERN Computing Announcement HyperNews forum](https://hypernews.cern.ch/HyperNews/CMS/get/cernCompAnnounce.html). <br>
 
 <br><br>
-_Last reviewed: 2020/11/09 by Guillermo Fidalgo_
+_Last reviewed: 2023/04/20 by Vukasin Milosevic
 <br>
 
 {% include links.md %}
 
-[Set3_form]: https://forms.gle/TyZrUCJaCrnW17MW6
+[Set3_form]: [https://forms.gle/TyZrUCJaCrnW17MW6](https://forms.gle/RgtCub5P5kwkoCCy8)
