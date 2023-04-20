@@ -43,15 +43,15 @@ For CMSDAS@CERN 2023 please submit your answers for the [CMSDAS@CERN Google Form
 
 
 > ## Support
-> There is a dedicated Mattermost team, called CMSDAS@LPC{{ site.year }},
+> There is a dedicated Mattermost team, called CMSDAS@CERN 2023,
 > setup to facilitate communication and discussions via live chat
 > (which is also archived). You will need your CERN login credentials
-> (SSO) and you will need to join the private CMSDAS@LPC{{ site.year }}
+> (SSO) and you will need to join the private CMSDAS@CERN 2023
 > team in order to be able to see (or find using the search
 > channels functionality) the channels setup for communications
 > related to the school. The sign-up link is
-> [here](https://mattermost.web.cern.ch/signup_user_complete/?id=xywbon1zutbqj8a53rzqomrp9r)
-> and the Preexercises channel can be found [here](https://mattermost.web.cern.ch/cmsdaslpc2023/channels/preexercises).
+> [here](https://mattermost.web.cern.ch/signup_user_complete/?id=4bfb4547abnwjfq3kn6uk4ms5h&md=link&sbr=su)
+> and the Pre-exercises channel can be found [here](https://mattermost.web.cern.ch/cmsdascern2023/channels/pre-exercises).
 >
 {: .testimonial}
 <!-- {: .support} -->
@@ -62,7 +62,7 @@ This exercise depends on obtaining a grid certificate and VOMS membership, but d
 
 After you've followed all the instructions above and installed your grid certificate, you need to verify it has all the information needed. Please install your grid certificate also on cmslpc-sl7.fnal.gov
 
-Login to **cmslpc-sl7.fnal.gov** and initialize your proxy:
+Login to **lxplus.cern.ch** and initialize your proxy:
 ```shell
 voms-proxy-init -voms cms
 ```
@@ -991,4 +991,4 @@ _Last reviewed: 2023/04/20 by Vukasin Milosevic
 
 {% include links.md %}
 
-[Set3_form]: [https://forms.gle/TyZrUCJaCrnW17MW6](https://forms.gle/RgtCub5P5kwkoCCy8)
+[Set3_form]: https://forms.gle/RgtCub5P5kwkoCCy8
