@@ -6,7 +6,8 @@ This repository generates the corresponding lesson website from [The Carpentries
 
 This set of pre-exercises was originally created by the Fermi National Accelerator Laboratory team for the purposes of [CMS DAS@FNAL](https://github.com/FNALLPC/cms-das-pre-exercises).
 
-A dedicated mattermost chat for troubleshooting can be found in within the general CMS DAS 2023 @CERN [mattermost team](https://mattermost.web.cern.ch).
+A dedicated mattermost chat for troubleshooting can be found in within the general CMS DAS 2023 @CERN [mattermost team](https://mattermost.web.cern.ch/cmsdascern2023/channels/pre-exercises).
+
 This tutorial was updated for CMS DAS 2023 @CERN by:
 
 * [Afiq Anuar](mailto:)
