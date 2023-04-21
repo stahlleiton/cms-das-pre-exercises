@@ -652,7 +652,7 @@ Below you also find the file:
 > config.Data.outputDatasetTag = 'CMSDAS2021_CRAB3_MC_generation_test0'
 >
 > config.section_("Site")
-> config.Site.storageSite = 'T3_US_FNALLPC'
+> config.Site.storageSite = 'T3_CH_CERNBOX'
 > ```
 {: .solution}
 Put the copy of  `crabConfig_MC_generation.py` under `YOURWORKINGAREA/CMSSW_10_6_18/src`.
