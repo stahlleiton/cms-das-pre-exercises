@@ -263,277 +263,276 @@ This MC generation code will then produce an EDM output file called `step1.root`
 > ## Show/Hide
 >
 > ```
->
->  *------------------------------------------------------------------------------------*
->  |                                                                                    |
->  |  *------------------------------------------------------------------------------*  |
->  |  |                                                                              |  |
->  |  |                                                                              |  |
->  |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  |
->  |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  |
->  |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  |
->  |  |   P       Y      T    H   H   I   A   A                                      |  |
->  |  |   P       Y      T    H   H  III  A   A    Now is 21 Oct 2021 at 14:57:40    |  |
->  |  |                                                                              |  |
->  |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: christian.bierlich@thep.lu.se                                   |  |
->  |  |   Nishita Desai;  Department of Theoretical Physics, Tata Institute,         |  |
->  |  |      Homi Bhabha Road, Mumbai 400005, India;                                 |  |
->  |  |      e-mail: desai@theory.tifr.res.in                                        |  |
->  |  |   Ilkka Helenius;  Department of Physics, University of Jyvaskyla,           |  |
->  |  |      P.O. Box 35, FI-40014 University of Jyvaskyla, Finland;                 |  |
->  |  |      e-mail: ilkka.m.helenius@jyu.fi                                         |  |
->  |  |   Philip Ilten;  School of Physics and Astronomy,                            |  |
->  |  |      University of Birmingham, Birmingham, B152 2TT, UK;                     |  |
->  |  |      e-mail: philten@cern.ch                                                 |  |
->  |  |   Leif Lonnblad;  Department of Astronomy and Theoretical Physics,           |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: leif.lonnblad@thep.lu.se                                        |  |
->  |  |   Stephen Mrenna;  Computing Division, Simulations Group,                    |  |
->  |  |      Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA;  |  |
->  |  |      e-mail: mrenna@fnal.gov                                                 |  |
->  |  |   Stefan Prestel;  Department of Astronomy and Theoretical Physics,          |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: stefan.prestel@thep.lu.se                                       |  |
->  |  |   Christine O. Rasmussen;  Department of Astronomy and Theoretical Physics,  |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: christine.rasmussen@thep.lu.se                                  |  |
->  |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: torbjorn@thep.lu.se                                             |  |
->  |  |   Peter Skands;  School of Physics,                                          |  |
->  |  |      Monash University, PO Box 27, 3800 Melbourne, Australia;                |  |
->  |  |      e-mail: peter.skands@monash.edu                                         |  |
->  |  |                                                                              |  |
->  |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  |
->  |  |   T. Sjostrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  |
->  |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  |
->  |  |                                                                              |  |
->  |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  |
->  |  |   T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  |
->  |  |                                                                              |  |
->  |  |   An archive of program versions and documentation is found on the web:      |  |
->  |  |   http://www.thep.lu.se/Pythia                                               |  |
->  |  |                                                                              |  |
->  |  |   This program is released under the GNU General Public Licence version 2.   |  |
->  |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  |
->  |  |                                                                              |  |
->  |  |   Disclaimer: this program comes without any guarantees.                     |  |
->  |  |   Beware of errors and use common sense when interpreting results.           |  |
->  |  |                                                                              |  |
->  |  |   Copyright (C) 2018 Torbjorn Sjostrand                                      |  |
->  |  |                                                                              |  |
->  |  |                                                                              |  |
->  |  *------------------------------------------------------------------------------*  |
->  |                                                                                    |
->  *------------------------------------------------------------------------------------*
->
->
->  *------------------------------------------------------------------------------------*
->  |                                                                                    |
->  |  *------------------------------------------------------------------------------*  |
->  |  |                                                                              |  |
->  |  |                                                                              |  |
->  |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  |
->  |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  |
->  |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  |
->  |  |   P       Y      T    H   H   I   A   A                                      |  |
->  |  |   P       Y      T    H   H  III  A   A    Now is 21 Oct 2021 at 14:57:40    |  |
->  |  |                                                                              |  |
->  |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: christian.bierlich@thep.lu.se                                   |  |
->  |  |   Nishita Desai;  Department of Theoretical Physics, Tata Institute,         |  |
->  |  |      Homi Bhabha Road, Mumbai 400005, India;                                 |  |
->  |  |      e-mail: desai@theory.tifr.res.in                                        |  |
->  |  |   Ilkka Helenius;  Department of Physics, University of Jyvaskyla,           |  |
->  |  |      P.O. Box 35, FI-40014 University of Jyvaskyla, Finland;                 |  |
->  |  |      e-mail: ilkka.m.helenius@jyu.fi                                         |  |
->  |  |   Philip Ilten;  School of Physics and Astronomy,                            |  |
->  |  |      University of Birmingham, Birmingham, B152 2TT, UK;                     |  |
->  |  |      e-mail: philten@cern.ch                                                 |  |
->  |  |   Leif Lonnblad;  Department of Astronomy and Theoretical Physics,           |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: leif.lonnblad@thep.lu.se                                        |  |
->  |  |   Stephen Mrenna;  Computing Division, Simulations Group,                    |  |
->  |  |      Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA;  |  |
->  |  |      e-mail: mrenna@fnal.gov                                                 |  |
->  |  |   Stefan Prestel;  Department of Astronomy and Theoretical Physics,          |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: stefan.prestel@thep.lu.se                                       |  |
->  |  |   Christine O. Rasmussen;  Department of Astronomy and Theoretical Physics,  |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: christine.rasmussen@thep.lu.se                                  |  |
->  |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  |
->  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  |
->  |  |      e-mail: torbjorn@thep.lu.se                                             |  |
->  |  |   Peter Skands;  School of Physics,                                          |  |
->  |  |      Monash University, PO Box 27, 3800 Melbourne, Australia;                |  |
->  |  |      e-mail: peter.skands@monash.edu                                         |  |
->  |  |                                                                              |  |
->  |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  |
->  |  |   T. Sjostrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  |
->  |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  |
->  |  |                                                                              |  |
->  |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  |
->  |  |   T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  |
->  |  |                                                                              |  |
->  |  |   An archive of program versions and documentation is found on the web:      |  |
->  |  |   http://www.thep.lu.se/Pythia                                               |  |
->  |  |                                                                              |  |
->  |  |   This program is released under the GNU General Public Licence version 2.   |  |
->  |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  |
->  |  |                                                                              |  |
->  |  |   Disclaimer: this program comes without any guarantees.                     |  |
->  |  |   Beware of errors and use common sense when interpreting results.           |  |
->  |  |                                                                              |  |
->  |  |   Copyright (C) 2018 Torbjorn Sjostrand                                      |  |
->  |  |                                                                              |  |
->  |  |                                                                              |  |
->  |  *------------------------------------------------------------------------------*  |
->  |                                                                                    |
->  *------------------------------------------------------------------------------------*
+> *------------------------------------------------------------------------------------* 
+> |                                                                                    | 
+> |  *------------------------------------------------------------------------------*  | 
+> |  |                                                                              |  | 
+> |  |                                                                              |  | 
+> |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+> |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
+> |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
+> |  |   P       Y      T    H   H   I   A   A                                      |  | 
+> |  |   P       Y      T    H   H  III  A   A    Now is 21 Apr 2023 at 11:32:03    |  | 
+> |  |                                                                              |  | 
+> |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: christian.bierlich@thep.lu.se                                   |  | 
+> |  |   Nishita Desai;  Department of Theoretical Physics, Tata Institute,         |  | 
+> |  |      Homi Bhabha Road, Mumbai 400005, India;                                 |  | 
+> |  |      e-mail: desai@theory.tifr.res.in                                        |  | 
+> |  |   Ilkka Helenius;  Department of Physics, University of Jyvaskyla,           |  | 
+> |  |      P.O. Box 35, FI-40014 University of Jyvaskyla, Finland;                 |  | 
+> |  |      e-mail: ilkka.m.helenius@jyu.fi                                         |  | 
+> |  |   Philip Ilten;  School of Physics and Astronomy,                            |  | 
+> |  |      University of Birmingham, Birmingham, B152 2TT, UK;                     |  | 
+> |  |      e-mail: philten@cern.ch                                                 |  | 
+> |  |   Leif Lonnblad;  Department of Astronomy and Theoretical Physics,           |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: leif.lonnblad@thep.lu.se                                        |  | 
+> |  |   Stephen Mrenna;  Computing Division, Simulations Group,                    |  | 
+> |  |      Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA;  |  | 
+> |  |      e-mail: mrenna@fnal.gov                                                 |  | 
+> |  |   Stefan Prestel;  Department of Astronomy and Theoretical Physics,          |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: stefan.prestel@thep.lu.se                                       |  | 
+> |  |   Christine O. Rasmussen;  Department of Astronomy and Theoretical Physics,  |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: christine.rasmussen@thep.lu.se                                  |  | 
+> |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: torbjorn@thep.lu.se                                             |  | 
+> |  |   Peter Skands;  School of Physics,                                          |  | 
+> |  |      Monash University, PO Box 27, 3800 Melbourne, Australia;                |  | 
+> |  |      e-mail: peter.skands@monash.edu                                         |  | 
+> |  |                                                                              |  | 
+> |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+> |  |   T. Sjostrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+> |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+> |  |                                                                              |  | 
+> |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+> |  |   T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+> |  |                                                                              |  | 
+> |  |   An archive of program versions and documentation is found on the web:      |  | 
+> |  |   http://www.thep.lu.se/Pythia                                               |  | 
+> |  |                                                                              |  | 
+> |  |   This program is released under the GNU General Public Licence version 2.   |  | 
+> |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+> |  |                                                                              |  | 
+> |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+> |  |   Beware of errors and use common sense when interpreting results.           |  | 
+> |  |                                                                              |  | 
+> |  |   Copyright (C) 2018 Torbjorn Sjostrand                                      |  | 
+> |  |                                                                              |  | 
+> |  |                                                                              |  | 
+> |  *------------------------------------------------------------------------------*  | 
+> |                                                                                    | 
+> *------------------------------------------------------------------------------------* 
 >
 >
->  *-------  PYTHIA Process Initialization  --------------------------*
->  |                                                                  |
->  | We collide p+ with p+ at a CM energy of 1.300e+04 GeV            |
->  |                                                                  |
->  |------------------------------------------------------------------|
->  |                                                    |             |
->  | Subprocess                                    Code |   Estimated |
->  |                                                    |    max (mb) |
->  |                                                    |             |
->  |------------------------------------------------------------------|
->  |                                                    |             |
->  | non-diffractive                                101 |   5.642e+01 |
->  | A B -> X B single diffractive                  103 |   6.416e+00 |
->  | A B -> A X single diffractive                  104 |   6.416e+00 |
->  | A B -> X X double diffractive                  105 |   8.798e+00 |
->  |                                                                  |
->  *-------  End PYTHIA Process Initialization -----------------------*
+> *------------------------------------------------------------------------------------* 
+> |                                                                                    | 
+> |  *------------------------------------------------------------------------------*  | 
+> |  |                                                                              |  | 
+> |  |                                                                              |  | 
+> |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+> |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
+> |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
+> |  |   P       Y      T    H   H   I   A   A                                      |  | 
+> |  |   P       Y      T    H   H  III  A   A    Now is 21 Apr 2023 at 11:32:03    |  | 
+> |  |                                                                              |  | 
+> |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: christian.bierlich@thep.lu.se                                   |  | 
+> |  |   Nishita Desai;  Department of Theoretical Physics, Tata Institute,         |  | 
+> |  |      Homi Bhabha Road, Mumbai 400005, India;                                 |  | 
+> |  |      e-mail: desai@theory.tifr.res.in                                        |  | 
+> |  |   Ilkka Helenius;  Department of Physics, University of Jyvaskyla,           |  | 
+> |  |      P.O. Box 35, FI-40014 University of Jyvaskyla, Finland;                 |  | 
+> |  |      e-mail: ilkka.m.helenius@jyu.fi                                         |  | 
+> |  |   Philip Ilten;  School of Physics and Astronomy,                            |  | 
+> |  |      University of Birmingham, Birmingham, B152 2TT, UK;                     |  | 
+> |  |      e-mail: philten@cern.ch                                                 |  | 
+> |  |   Leif Lonnblad;  Department of Astronomy and Theoretical Physics,           |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: leif.lonnblad@thep.lu.se                                        |  | 
+> |  |   Stephen Mrenna;  Computing Division, Simulations Group,                    |  | 
+> |  |      Fermi National Accelerator Laboratory, MS 234, Batavia, IL 60510, USA;  |  | 
+> |  |      e-mail: mrenna@fnal.gov                                                 |  | 
+> |  |   Stefan Prestel;  Department of Astronomy and Theoretical Physics,          |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: stefan.prestel@thep.lu.se                                       |  | 
+> |  |   Christine O. Rasmussen;  Department of Astronomy and Theoretical Physics,  |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: christine.rasmussen@thep.lu.se                                  |  | 
+> |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  | 
+> |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
+> |  |      e-mail: torbjorn@thep.lu.se                                             |  | 
+> |  |   Peter Skands;  School of Physics,                                          |  | 
+> |  |      Monash University, PO Box 27, 3800 Melbourne, Australia;                |  | 
+> |  |      e-mail: peter.skands@monash.edu                                         |  | 
+> |  |                                                                              |  | 
+> |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+> |  |   T. Sjostrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+> |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+> |  |                                                                              |  | 
+> |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+> |  |   T. Sjostrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+> |  |                                                                              |  | 
+> |  |   An archive of program versions and documentation is found on the web:      |  | 
+> |  |   http://www.thep.lu.se/Pythia                                               |  | 
+> |  |                                                                              |  | 
+> |  |   This program is released under the GNU General Public Licence version 2.   |  | 
+> |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+> |  |                                                                              |  | 
+> |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+> |  |   Beware of errors and use common sense when interpreting results.           |  | 
+> |  |                                                                              |  | 
+> |  |   Copyright (C) 2018 Torbjorn Sjostrand                                      |  | 
+> |  |                                                                              |  | 
+> |  |                                                                              |  | 
+> |  *------------------------------------------------------------------------------*  | 
+> |                                                                                    | 
+> *------------------------------------------------------------------------------------* 
 >
->  *-------  PYTHIA Multiparton Interactions Initialization  ---------*
->  |                                                                  |
->  |                   sigmaNonDiffractive =    56.42 mb              |
->  |                                                                  |
->  |    pT0 =  2.81 gives sigmaInteraction =   267.96 mb: accepted    |
->  |                                                                  |
->  *-------  End PYTHIA Multiparton Interactions Initialization  -----*
->  PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 1.055
 >
->  *-------  PYTHIA Multiparton Interactions Initialization  ---------*
->  |                                                                  |
->  |                          diffraction XB                          |
->  |                                                                  |
->  |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  0.46 gives sigmaInteraction =    54.25 mb: accepted    |
->  |   diffractive mass = 6.00e+01 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  0.72 gives sigmaInteraction =    28.53 mb: accepted    |
->  |   diffractive mass = 3.61e+02 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  1.14 gives sigmaInteraction =    20.25 mb: accepted    |
->  |   diffractive mass = 2.16e+03 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  1.79 gives sigmaInteraction =    30.44 mb: accepted    |
->  |   diffractive mass = 1.30e+04 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  2.81 gives sigmaInteraction =    52.87 mb: accepted    |
->  |                                                                  |
->  *-------  End PYTHIA Multiparton Interactions Initialization  -----*
+> *-------  PYTHIA Process Initialization  --------------------------*
+> |                                                                  |
+> | We collide p+ with p+ at a CM energy of 1.300e+04 GeV            |
+> |                                                                  |
+> |------------------------------------------------------------------|
+> |                                                    |             |
+> | Subprocess                                    Code |   Estimated |
+> |                                                    |    max (mb) |
+> |                                                    |             |
+> |------------------------------------------------------------------|
+> |                                                    |             |
+> | non-diffractive                                101 |   5.642e+01 |
+> | A B -> X B single diffractive                  103 |   6.416e+00 |
+> | A B -> A X single diffractive                  104 |   6.416e+00 |
+> | A B -> X X double diffractive                  105 |   8.798e+00 |
+> |                                                                  |
+> *-------  End PYTHIA Process Initialization -----------------------*
 >
->  *-------  PYTHIA Multiparton Interactions Initialization  ---------*
->  |                                                                  |
->  |                          diffraction AX                          |
->  |                                                                  |
->  |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  0.46 gives sigmaInteraction =    54.35 mb: accepted    |
->  |   diffractive mass = 6.00e+01 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  0.72 gives sigmaInteraction =    28.27 mb: accepted    |
->  |   diffractive mass = 3.61e+02 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  1.14 gives sigmaInteraction =    20.31 mb: accepted    |
->  |   diffractive mass = 2.16e+03 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  1.79 gives sigmaInteraction =    30.66 mb: accepted    |
->  |   diffractive mass = 1.30e+04 GeV and sigmaNorm =    10.00 mb    |
->  |    pT0 =  2.81 gives sigmaInteraction =    52.96 mb: accepted    |
->  |                                                                  |
->  *-------  End PYTHIA Multiparton Interactions Initialization  -----*
+> *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+> |                                                                  | 
+> |                   sigmaNonDiffractive =    56.42 mb              | 
+> |                                                                  | 
+> |    pT0 =  2.81 gives sigmaInteraction =   267.96 mb: accepted    | 
+> |                                                                  | 
+> *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+> PYTHIA Warning in MultipartonInteractions::init: maximum increased by factor 1.055
+> 
+> *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+> |                                                                  | 
+> |                          diffraction XB                          | 
+> |                                                                  | 
+> |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  0.46 gives sigmaInteraction =    54.25 mb: accepted    | 
+> |   diffractive mass = 6.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  0.72 gives sigmaInteraction =    28.53 mb: accepted    | 
+> |   diffractive mass = 3.61e+02 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  1.14 gives sigmaInteraction =    20.25 mb: accepted    | 
+> |   diffractive mass = 2.16e+03 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  1.79 gives sigmaInteraction =    30.44 mb: accepted    | 
+> |   diffractive mass = 1.30e+04 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  2.81 gives sigmaInteraction =    52.87 mb: accepted    | 
+> |                                                                  | 
+> *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
 >
->  *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------*
->  |                                                                                                                 |
->  | Name                                          |                      Now |      Default         Min         Max |
->  |                                               |                          |                                      |
->  | Beams:eCM                                     |                13000.000 |    14000.000    10.00000             |
->  | Check:epTolErr                                |                0.0100000 |   1.0000e-04                         |
->  | Main:timesAllowErrors                         |                    10000 |           10           0             |
->  | MultipartonInteractions:ecmPow                |                  0.25208 |      0.21500         0.0     0.50000 |
->  | MultipartonInteractions:expPow                |                  1.60000 |      1.85000     0.40000    10.00000 |
->  | MultipartonInteractions:pT0Ref                |                  2.40240 |      2.28000     0.50000    10.00000 |
->  | Next:numberShowEvent                          |                        0 |            1           0             |
->  | ParticleDecays:allowPhotonRadiation           |                       on |          off                         |
->  | ParticleDecays:limitTau0                      |                       on |          off                         |
->  | SLHA:minMassSM                                |                 1000.000 |    100.00000                         |
->  | SoftQCD:doubleDiffractive                     |                       on |          off                         |
->  | SoftQCD:nonDiffractive                        |                       on |          off                         |
->  | SoftQCD:singleDiffractive                     |                       on |          off                         |
->  | Tune:preferLHAPDF                             |                        2 |            1           0           2 |
->  |                                                                                                                 |
->  *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------*
+> *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+> |                                                                  | 
+> |                          diffraction AX                          | 
+> |                                                                  | 
+> |   diffractive mass = 1.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  0.46 gives sigmaInteraction =    54.35 mb: accepted    | 
+> |   diffractive mass = 6.00e+01 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  0.72 gives sigmaInteraction =    28.27 mb: accepted    | 
+> |   diffractive mass = 3.61e+02 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  1.14 gives sigmaInteraction =    20.31 mb: accepted    | 
+> |   diffractive mass = 2.16e+03 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  1.79 gives sigmaInteraction =    30.66 mb: accepted    | 
+> |   diffractive mass = 1.30e+04 GeV and sigmaNorm =    10.00 mb    | 
+> |    pT0 =  2.81 gives sigmaInteraction =    52.96 mb: accepted    | 
+> |                                                                  | 
+> *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
 >
->  --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+> *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+> |                                                                                                                 | 
+> | Name                                          |                      Now |      Default         Min         Max | 
+> |                                               |                          |                                      | 
+> | Beams:eCM                                     |                13000.000 |    14000.000    10.00000             | 
+> | Check:epTolErr                                |                0.0100000 |   1.0000e-04                         | 
+> | Main:timesAllowErrors                         |                    10000 |           10           0             | 
+> | MultipartonInteractions:ecmPow                |                  0.25208 |      0.21500         0.0     0.50000 | 
+> | MultipartonInteractions:expPow                |                  1.60000 |      1.85000     0.40000    10.00000 | 
+> | MultipartonInteractions:pT0Ref                |                  2.40240 |      2.28000     0.50000    10.00000 | 
+> | Next:numberShowEvent                          |                        0 |            1           0             | 
+> | ParticleDecays:allowPhotonRadiation           |                       on |          off                         | 
+> | ParticleDecays:limitTau0                      |                       on |          off                         | 
+> | SLHA:minMassSM                                |                 1000.000 |    100.00000                         | 
+> | SoftQCD:doubleDiffractive                     |                       on |          off                         | 
+> | SoftQCD:nonDiffractive                        |                       on |          off                         | 
+> | SoftQCD:singleDiffractive                     |                       on |          off                         | 
+> | Tune:preferLHAPDF                             |                        2 |            1           0           2 | 
+> |                                                                                                                 | 
+> *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+>
+> --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+> 
+>      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+>             no onMode   bRatio   meMode     products 
+>
+>  no particle data has been changed from its default value 
+>
+> --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+>
+>
+> *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+> |                                                                                                                 | 
+> | Name                                          |                      Now |      Default         Min         Max | 
+> |                                               |                          |                                      | 
+> | Next:numberShowEvent                          |                        0 |            1           0             | 
+> | ParticleDecays:allowPhotonRadiation           |                       on |          off                         | 
+> | ParticleDecays:limitTau0                      |                       on |          off                         | 
+> | ProcessLevel:all                              |                      off |           on                         | 
+> |                                                                                                                 | 
+> *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+>
+> --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+> 
+>      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+>             no onMode   bRatio   meMode     products 
+>
+> no particle data has been changed from its default value 
+>
+> --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+>
+> Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:06.079 CEST
+>
+> --------  PYTHIA Info Listing  ---------------------------------------- 
+> 
+> Beam A: id =   2212, pz =  6.500e+03, e =  6.500e+03, m =  9.383e-01.
+> Beam B: id =   2212, pz = -6.500e+03, e =  6.500e+03, m =  9.383e-01.
+>
+> In 1: id =    3, x =  5.935e-05, pdf =  4.937e-01 at Q2 =  3.474e+00.
+> In 2: id =    1, x =  1.439e-03, pdf =  4.936e-01 at same Q2.
+>
+> Process non-diffractive with code 101 is 2 -> 2.
+> Subprocess q q(bar)' -> q q(bar)' with code 114 is 2 -> 2.
+> It has sHat =  1.443e+01,    tHat = -5.823e+00,    uHat = -8.610e+00,
+>       pTHat =  1.864e+00,   m3Hat =  0.000e+00,   m4Hat =  0.000e+00,
+>    thetaHat =  1.376e+00,  phiHat =  2.086e+00.
+>     alphaEM =  7.539e-03,  alphaS =  2.754e-01    at Q2 =  1.136e+01.
+>
+> Impact parameter b =  1.874e+00 gives enhancement factor =  1.343e-02.
+> Max pT scale for MPI =  1.864e+00, ISR =  1.864e+00, FSR =  1.864e+00.
+> Number of MPI =     1, ISR =     2, FSRproc =     0, FSRreson =     0.
+>
+> --------  End PYTHIA Info Listing  ------------------------------------
+>
+> --------  PYTHIA Event Listing  (hard process)  -----------------------------------------------------------------------------------
 >  
->       id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
->              no onMode   bRatio   meMode     products
->
->  no particle data has been changed from its default value
->
->  --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
->
->
->  *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------*
->  |                                                                                                                 |
->  | Name                                          |                      Now |      Default         Min         Max |
->  |                                               |                          |                                      |
->  | Next:numberShowEvent                          |                        0 |            1           0             |
->  | ParticleDecays:allowPhotonRadiation           |                       on |          off                         |
->  | ParticleDecays:limitTau0                      |                       on |          off                         |
->  | ProcessLevel:all                              |                      off |           on                         |
->  |                                                                                                                 |
->  *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------*
->
->  --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
->  
->       id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
->              no onMode   bRatio   meMode     products
->
->  no particle data has been changed from its default value
->
->  --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
->
-> Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 21-Oct-2021 14:57:45.332 CST
->
->  --------  PYTHIA Info Listing  ----------------------------------------
->  
->  Beam A: id =   2212, pz =  6.500e+03, e =  6.500e+03, m =  9.383e-01.
->  Beam B: id =   2212, pz = -6.500e+03, e =  6.500e+03, m =  9.383e-01.
->
->  In 1: id =    3, x =  5.935e-05, pdf =  4.937e-01 at Q2 =  3.474e+00.
->  In 2: id =    1, x =  1.439e-03, pdf =  4.936e-01 at same Q2.
->
->  Process non-diffractive with code 101 is 2 -> 2.
->  Subprocess q q(bar)' -> q q(bar)' with code 114 is 2 -> 2.
->  It has sHat =  1.443e+01,    tHat = -5.823e+00,    uHat = -8.610e+00,
->        pTHat =  1.864e+00,   m3Hat =  0.000e+00,   m4Hat =  0.000e+00,
->     thetaHat =  1.376e+00,  phiHat =  2.086e+00.
->      alphaEM =  7.539e-03,  alphaS =  2.754e-01    at Q2 =  1.136e+01.
->
->  Impact parameter b =  1.874e+00 gives enhancement factor =  1.343e-02.
->  Max pT scale for MPI =  1.864e+00, ISR =  1.864e+00, FSR =  1.864e+00.
->  Number of MPI =     1, ISR =     2, FSRproc =     0, FSRreson =     0.
->
->  --------  End PYTHIA Info Listing  ------------------------------------
->
->  --------  PYTHIA Event Listing  (hard process)  -----------------------------------------------------------------------------------
->  
->     no         id  name            status     mothers   daughters     colours      p_x        p_y        p_z         e          m
+>     no         id  name            status     mothers   daughters     colours      p_x        p_y        p_z         e          m 
 >      0         90  (system)           -11     0     0     0     0     0     0      0.000      0.000      0.000  13000.000  13000.000
 >      1       2212  (p+)               -12     0     0     3     0     0     0      0.000      0.000   6500.000   6500.000      0.938
 >      2       2212  (p+)               -12     0     0     4     0     0     0      0.000      0.000  -6500.000   6500.000      0.938
@@ -542,73 +541,78 @@ This MC generation code will then produce an EDM output file called `step1.root`
 >      5          3  s                   23     3     4     0     0   102     0      1.581     -0.895     -3.611      4.073      0.500
 >      6          1  d                   23     3     4     0     0   101     0     -1.581      0.895     -5.356      5.666      0.330
 >                                    Charge sum: -0.667           Momentum sum:      0.000      0.000     -8.967      9.739      3.799
->
+> 
 >  --------  End PYTHIA Event Listing  -----------------------------------------------------------------------------------------------
-> Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 21-Oct-2021 14:57:50.885 CST
-> Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 21-Oct-2021 14:57:52.508 CST
-> Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 21-Oct-2021 14:57:59.755 CST
-> Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 21-Oct-2021 14:57:59.758 CST
-> Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 21-Oct-2021 14:58:11.723 CST
-> Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 21-Oct-2021 14:58:11.965 CST
-> Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 21-Oct-2021 14:58:15.726 CST
-> Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 21-Oct-2021 14:58:17.689 CST
-> Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 21-Oct-2021 14:58:18.260 CST
+> Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:09.990 CEST
+> Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:11.147 CEST
+> Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:15.916 CEST
+> Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:15.918 CEST
+> Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:22.698 CEST
+> Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:22.858 CEST
+> Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:25.345 CEST
+> Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:26.413 CEST
+> Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:39.373 CEST
+> 
+> *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
+> |                                                                                                                 |
+> | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+> |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+> |                                                    |                                   |                        |
+> |-----------------------------------------------------------------------------------------------------------------|
+> |                                                    |                                   |                        |
+> | non-diffractive                                101 |           7          7          7 |   5.642e+01  0.000e+00 |
+> | A B -> X B single diffractive                  103 |           1          1          1 |   6.416e+00  6.416e+00 |
+> | A B -> A X single diffractive                  104 |           1          1          1 |   6.416e+00  6.416e+00 |
+> | A B -> X X double diffractive                  105 |           1          1          1 |   8.798e+00  8.798e+00 |
+> |                                                    |                                   |                        |
+> | sum                                                |          10         10         10 |   7.805e+01  1.264e+01 |
+> |                                                                                                                 |
+> *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
 >
->  *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
->  |                                                                                                                 |
->  | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
->  |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
->  |                                                    |                                   |                        |
->  |-----------------------------------------------------------------------------------------------------------------|
->  |                                                    |                                   |                        |
->  | non-diffractive                                101 |           6          6          6 |   5.642e+01  0.000e+00 |
->  | A B -> X B single diffractive                  103 |           1          1          1 |   6.416e+00  6.416e+00 |
->  | A B -> A X single diffractive                  104 |           1          1          1 |   6.416e+00  6.416e+00 |
->  | A B -> X X double diffractive                  105 |           2          2          2 |   8.798e+00  0.000e+00 |
->  |                                                    |                                   |                        |
->  | sum                                                |          10         10         10 |   7.805e+01  9.074e+00 |
->  |                                                                                                                 |
->  *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
+> *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+> |                                                                                                                 | 
+> |  times   message                                                                                                | 
+> |                                                                                                                 | 
+> |      3   Warning in MultipartonInteractions::init: maximum increased                                            | 
+> |                                                                                                                 | 
+> *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
 >
->  *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------*
->  |                                                                                                                 |
->  |  times   message                                                                                                |
->  |                                                                                                                 |
->  |      3   Warning in MultipartonInteractions::init: maximum increased                                            |
->  |                                                                                                                 |
->  *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------*
+> *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
+> |                                                                                                                 |
+> | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+> |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+> |                                                    |                                   |                        |
+> |-----------------------------------------------------------------------------------------------------------------|
+> |                                                    |                                   |                        |
+> | non-diffractive                                101 |           7          7          7 |   5.642e+01  0.000e+00 |
+> | A B -> X B single diffractive                  103 |           1          1          1 |   6.416e+00  6.416e+00 |
+> | A B -> A X single diffractive                  104 |           1          1          1 |   6.416e+00  6.416e+00 |
+> | A B -> X X double diffractive                  105 |           1          1          1 |   8.798e+00  8.798e+00 |
+> |                                                    |                                   |                        |
+> | sum                                                |          10         10         10 |   7.805e+01  1.264e+01 |
+> |                                                                                                                 |
+> *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
 >
->  *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
->  |                                                                                                                 |
->  | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
->  |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
->  |                                                    |                                   |                        |
->  |-----------------------------------------------------------------------------------------------------------------|
->  |                                                    |                                   |                        |
->  | non-diffractive                                101 |           6          6          6 |   5.642e+01  0.000e+00 |
->  | A B -> X B single diffractive                  103 |           1          1          1 |   6.416e+00  6.416e+00 |
->  | A B -> A X single diffractive                  104 |           1          1          1 |   6.416e+00  6.416e+00 |
->  | A B -> X X double diffractive                  105 |           2          2          2 |   8.798e+00  0.000e+00 |
->  |                                                    |                                   |                        |
->  | sum                                                |          10         10         10 |   7.805e+01  9.074e+00 |
->  |                                                                                                                 |
->  *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
->
->  *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------*
->  |                                                                                                                 |
->  |  times   message                                                                                                |
->  |                                                                                                                 |
->  |      3   Warning in MultipartonInteractions::init: maximum increased                                            |
->  |                                                                                                                 |
->  *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------*
+> *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+> |                                                                                                                 | 
+> |  times   message                                                                                                | 
+> |                                                                                                                 | 
+> |      3   Warning in MultipartonInteractions::init: maximum increased                                            | 
+> |                                                                                                                 | 
+> *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
 >
 > ------------------------------------
 > GenXsecAnalyzer:
 > ------------------------------------
-> Before Filter: total cross section = 7.805e+10 +- 9.074e+09 pb
+> Before Filter: total cross section = 7.805e+10 +- 1.264e+10 pb
 > Filter efficiency (taking into account weights)= (10) / (10) = 1.000e+00 +- 0.000e+00
 > Filter efficiency (event-level)= (10) / (10) = 1.000e+00 +- 0.000e+00    [TO BE USED IN MCM]
->
+> 
+> After filter: final cross section = 7.805e+10 +- 1.264e+10 pb
+> After filter: final fraction of events with negative weights = 0.000e+00 +- 0.000e+00
+> After filter: final equivalent lumi for 1M events (1/fb) = 1.281e-08 +- 2.075e-09
+> 
+> ============================================= 
 > ```
 {: .solution}
 
