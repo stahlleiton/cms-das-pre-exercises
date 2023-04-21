@@ -858,22 +858,22 @@ crab report
 You'll get something like this
 ```
 Running crab status first to fetch necessary information.
-Will save lumi files into output directory /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
+Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
 Summary from jobs in status 'finished':
   Number of files processed: 64
-  Number of events read: 636670
-  Number of events written in EDM files: 636670
+  Number of events read: X
+  Number of events written in EDM files: X
   Number of events written in TFileService files: 0
   Number of events written in other type of files: 0
   Processed lumis written to processedLumis.json
 Summary from output datasets in DBS:
   Number of events:
-    /DoubleMuon/belt-crab_CMSDAS_Data_analysis_test0-dfbd2918d11fceef1aa67bdee18b8002/USER: 636670
+    /DoubleMuon/vmilosev-crab_CMSDAS_Data_analysis_test0-dfbd2918d11fceef1aa67bdee18b8002/USER: 2167324
   Output datasets lumis written to outputDatasetsLumis.json
 Additional report lumi files:
   Input dataset lumis (from DBS, at task submission time) written to inputDatasetLumis.json
   Lumis to process written to lumisToProcess.json
-Log file is /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
 ```
 {: .output}
 
@@ -881,7 +881,7 @@ Log file is /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab
 
 
 > ## Question 13
-> How many events were analyzed? (n.b. the number in the above example were randomized) <BR>
+> How many events were analyzed? (n.b. the number in the above example were replaced with `X`) <BR>
 > For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
