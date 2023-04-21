@@ -672,15 +672,14 @@ Then you should get an output similar to this:
 ```
 Will use CRAB configuration file crabConfig_MC_generation.py
 Enter GRID pass phrase for this identity:
-Enter GRID pass phrase for this identity:
 Importing CMSSW configuration CMSDAS_MC_generation.py
 Finished importing CMSSW configuration CMSDAS_MC_generation.py
 Sending the request to the server at cmsweb.cern.ch
 Success: Your task has been delivered to the prod CRAB3 server.
-Task name: 211024_214242:belt_crab_CMSDAS_MC_generation_test0
+Task name: 230421_095644:vmilosev_crab_CMSDAS_MC_generation_test0
 Project dir: crab_projects/crab_CMSDAS_MC_generation_test0
 Please use ' crab status -d crab_projects/crab_CMSDAS_MC_generation_test0 ' to check how the submission process proceeds.
-Log file is /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
