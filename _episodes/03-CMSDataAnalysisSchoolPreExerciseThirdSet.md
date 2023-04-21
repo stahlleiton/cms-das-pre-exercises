@@ -923,29 +923,27 @@ Refer to [the documentation](https://cmslumi.web.cern.ch/) for further informati
 ```
 {: .source}
 
-## Copy your luminosity json from the lpc to lxplus
-
 When running `crab report`, the report will give you the location of a **JSON-formatted file** containing the luminosity information
 ```
-Will save lumi files into output directory /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
+Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
 ```
 {: .output}
 
  This directory contains various luminosity files. Let's figure out how much luminosity was run on by our jobs.
 
-First step is to copy the `processedLumis.json` file to lxplus: So, from the terminal that is logged into **the LPC**, type:
+First step is to copy the `processedLumis.json` file to your `.local/bin/` folder:
 ``` shell
-scp [lumi directory]/processedLumis.json [cern username]@lxplus.cern.ch:.local/bin/.
+cp [lumi directory]/processedLumis.json ~/.local/bin/
 ```
 {: .source}
 
-Here, `[lumi directory]` is the directory reported by `crab report`, and `[cern username]` is your CERN username.
+Here, `[lumi directory]` is the directory reported by `crab report`.
 
 ## Find the luminosity for the dataset
 
 Go back to the tab that is logged into **lxplus**. We now let `brilcalc` calculate the luminosity we processed with our jobs using the json file by typing following commands:
 ``` shell
-cd .local/bin/
+cd ~/.local/bin/
 ./brilcalc lumi -b "STABLE BEAMS" --normtag /afs/cern.ch/user/l/lumipro/public/Normtags/normtag_DATACERT.json -i processedLumis.json -u /fb
 ```
 if the above does not work, try instead:
