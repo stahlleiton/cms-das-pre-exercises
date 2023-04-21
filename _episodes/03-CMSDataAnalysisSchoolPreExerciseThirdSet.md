@@ -213,7 +213,7 @@ crab checkwrite --site=T3_CH_CERNBOX
 > {: .output}
 {: .solution}
 
- Choosing the `T3_CH_CERNBOX` "site" allows you to have the option of outputing crab jobs to your *EOS area*, providing you with an easy way to access the produced files. However this does not allow for publishing of produced samples as CERNBOX is NOT a CMS storage, and files in there can not be listed in DBS. For more details about crab output options, visit the following [link](https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ).
+ Choosing the `T3_CH_CERNBOX` "site" allows you to have the option of outputing crab jobs to your *EOS area*, providing you with an easy way to access produced files. However this does not allow for publishing of produced samples as CERNBOX is NOT a CMS storage, and files in there can not be listed in DBS. For more details about crab output options, visit the following [link](https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3FAQ).
 
 > ## Question 11
 > What is the name of your directory name in eos? <br>
