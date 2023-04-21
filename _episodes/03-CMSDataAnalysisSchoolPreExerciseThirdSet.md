@@ -968,7 +968,7 @@ In the example of that other json file, the total recorded luminosity for those 
 
 > ## Question 14
 >  What is the reported number of inverse femtobarns analyzed? (n.b. it is not the same sample as listed above with luminosity 2.6<sup>-1</sup>. )
-> For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
+> For CMSDAS@CERN{{ site.year }} please submit your answers for the [CMSDAS@CERN{{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
 #  Where to find more on CRAB
