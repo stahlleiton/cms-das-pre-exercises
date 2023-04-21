@@ -622,7 +622,7 @@ This MC generation code will then produce an EDM output file called `step1.root`
 > For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
-## Generate and publish MC dataset using CRAB
+## Generate MC dataset using CRAB
 
 CRAB is handled by a *configuration file*. In CRAB3, the configuration file is in Python language. Here we give an example CRAB configuration file to run the `CMSDAS_MC_generation.py` MC event generation code. You can download a copy of [crabConfig_MC_generation.py]({{ page.root }}{% link code/crabConfig_MC_generation.py %}).
 
@@ -753,8 +753,8 @@ Log file is /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab
 From the bottom of the output, you can see the name of the dataset and the DAS link to it. Congratulations! This is the your first CMS dataset.
 
 > ## Question 12.2
-> What is the dataset name you published? <br>
-> For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
+> What is the name of the dataset you produced? <br>
+> For CMSDAS@CERN{{ site.year }} please submit your answers for the [CMSDAS@CERN{{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
 # Exercise 13 - Running on a dataset with CRAB
