@@ -699,18 +699,18 @@ crab status crab_projects/crab_CMSDAS_MC_generation_test0
 The `crab status` command will produce an output containing the task name, the status of the task as a whole, the details of how many jobs are in which state (submitted, running, transfering, finished, cooloff, etc.) and the location of the CRAB log (`crab.log`) file. It will also print the URLs of two web pages that one can use to monitor the jobs. In summary, it should look something like this:
 
 ```
-CRAB project directory:		/uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
-Task name:			211024_214242:belt_crab_CMSDAS_MC_generation_test0
-Grid scheduler - Task Worker:	crab3@vocms0122.cern.ch - crab-prod-tw01
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
+Task name:			230421_095644:vmilosev_crab_CMSDAS_MC_generation_test0
+Grid scheduler - Task Worker:	crab3@vocms0120.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
-Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/211024_214242%3Abelt_crab_CMSDAS_MC_generation_test0
-Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=belt&var-task=211024_214242%3Abelt_crab_CMSDAS_MC_generation_test0&from=1635108162000&to=now
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230421_095644%3Avmilosev_crab_CMSDAS_MC_generation_test0
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=vmilosev&var-task=230421_095644%3Avmilosev_crab_CMSDAS_MC_generation_test0&from=1682067404000&to=now
 Status on the scheduler:	SUBMITTED
-Task bootstrapped at 2021-10-24 21:43:47 UTC. 44 seconds ago
-Status information will be available within a few minutes
+
+Jobs status:                    idle         		100.0% (10/10)
 
 No publication information available yet
-Log file is /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
