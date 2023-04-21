@@ -714,13 +714,13 @@ Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/
  Now you can take a break and have some fun. Come back after couple hours or so and check the status again.
 
 ```
-[tonjes@cmslpc101 src]$ crab status crab_projects/crab_CMSDAS_MC_generation_test0
-CRAB project directory:		/uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
-Task name:			211024_214242:belt_crab_CMSDAS_MC_generation_test0
-Grid scheduler - Task Worker:	crab3@vocms0122.cern.ch - crab-prod-tw01
+[vmilosev@lxplus700 src]$ crab status crab_projects/crab_CMSDAS_MC_generation_test0/
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
+Task name:			230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
+Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
-Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/211024_214242%3Abelt_crab_CMSDAS_MC_generation_test0
-Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=belt&var-task=211024_214242%3Abelt_crab_CMSDAS_MC_generation_test0&from=1635108162000&to=now
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230421_132846%3Avmilosev_crab_CMSDAS_MC_generation_test0
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=vmilosev&var-task=230421_132846%3Avmilosev_crab_CMSDAS_MC_generation_test0&from=1682080126000&to=now
 Status on the scheduler:	COMPLETED
 
 Jobs status:                    finished     		100.0% (10/10)
@@ -728,20 +728,20 @@ Jobs status:                    finished     		100.0% (10/10)
 Publication status of 1 dataset(s):	done         		100.0% (10/10)
 (from CRAB internal bookkeeping in transferdb)
 
-Output dataset:			/MinBias/belt-CMSDAS2021_CRAB3_MC_generation_test0-67359df6f8a0ef3c567d7c8fea38a809/USER
-Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FMinBias%2Fbelt-CMSDAS2021_CRAB3_MC_generation_test0-67359df6f8a0ef3c567d7c8fea38a809%2FUSER&instance=prod%2Fphys03
+Output dataset:			/MinBias/vmilosev-CMSDAS2023_CRAB3_MC_generation_test0-67359df6f8a0ef3c567d7c8fea38a809/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FMinBias%2Fvmilosev-CMSDAS2023_CRAB3_MC_generation_test0-67359df6f8a0ef3c567d7c8fea38a809%2FUSER&instance=prod%2Fphys03
 
 Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
 
 Warning: the average jobs CPU efficiency is less than 50%, please consider to improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task
 
 Summary of run jobs:
- * Memory: 39MB min, 84MB max, 43MB ave
- * Runtime: 0:04:55 min, 0:45:15 max, 0:08:59 ave
- * CPU eff: 7% min, 73% max, 22% ave
- * Waste: 1:15:29 (46% of total)
+ * Memory: 26MB min, 66MB max, 40MB ave
+ * Runtime: 0:04:34 min, 0:05:05 max, 0:04:41 ave
+ * CPU eff: 14% min, 58% max, 33% ave
+ * Waste: 1:17:58 (62% of total)
 
-Log file is /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
