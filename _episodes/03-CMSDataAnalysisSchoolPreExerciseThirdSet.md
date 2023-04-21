@@ -916,7 +916,7 @@ We will use the BRIL work suite, a commandline toolkit for CMS Beam Radiation In
 
 Refer to [the documentation](https://cmslumi.web.cern.ch/) for further information on BRIL.
 
-**Login to lxplus** (use a seperate tab in your terminal!) then enter the following command:
+Enter the following command:
 
 ``` shell
 /cvmfs/cms-bril.cern.ch/brilconda3/bin/python3 -m pip install --user --upgrade brilws
@@ -941,7 +941,7 @@ Here, `[lumi directory]` is the directory reported by `crab report`.
 
 ## Find the luminosity for the dataset
 
-Go back to the tab that is logged into **lxplus**. We now let `brilcalc` calculate the luminosity we processed with our jobs using the json file by typing following commands:
+We now let `brilcalc` calculate the luminosity we processed with our jobs using the json file by typing following commands:
 ``` shell
 cd ~/.local/bin/
 ./brilcalc lumi -b "STABLE BEAMS" --normtag /afs/cern.ch/user/l/lumipro/public/Normtags/normtag_DATACERT.json -i processedLumis.json -u /fb
