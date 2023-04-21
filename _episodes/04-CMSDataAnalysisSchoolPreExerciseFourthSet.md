@@ -17,10 +17,10 @@ keypoints:
 
 # Introduction
 
-In this set of exercises, we will analyze the [MiniAOD][miniaod] file that was made in the [third set of exercise]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}). You must have this skimmed [MiniAOD][miniaod] stored locally (at T3_US_FNALLPC) in order to access them. We will use several different workflows for analyzing the [MiniAOD][miniaod], namely an EDAnalyzer, a FWLite executable, a FWLite Macro, and a FWLite PyROOT script. We will basically re-make the Z peak and few other histograms and store them in an output root file. In the exercise in the end we will try to fit with a Gaussian, Breit-Wigner function, etc.
+In this set of exercises, we will analyze the [MiniAOD][miniaod] file that was made in the [third set of exercise]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}). You must have this skimmed [MiniAOD][miniaod] stored locally (in your `eos` user space) in order to access them. We will use several different workflows for analyzing the [MiniAOD][miniaod], namely an EDAnalyzer, a FWLite executable, a FWLite Macro, and a FWLite PyROOT script. We will basically re-make the Z peak and few other histograms and store them in an output root file. In the exercise in the end we will try to fit with a Gaussian, Breit-Wigner function, etc.
 
 > ## Warning
-> To perform this set of exercises, an [LPC](https://twiki.cern.ch/twiki/bin/view/CMS/LPC) account, Grid Certificate, and CMS VO membership are required. You should already have these things, but if not, follow these instructions from the [setup instructions]({{ page.root }}{% link setup.md %}).
+> To perform this set of exercises, a CERN computing account, Grid Certificate, and CMS VO membership are required. You should already have these things, but if not, follow these instructions from the [setup instructions]({{ page.root }}{% link setup.md %}).
 {: .prereq}
 
 > ## Objective
@@ -86,8 +86,8 @@ Next, create the following two files (download/save): [$CMSSW_BASE/src/PhysicsTo
 > ## Hint
 > A quick way to do this on Linux, or any machine with `wget`, is by using the following commands:
 > ~~~shell
-> wget https://fnallpc.github.io/cms-das-pre-exercises/code/MyZPeakAnalyzer-CMSSW_10_6_18.cc -O $CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc
-> wget https://fnallpc.github.io/cms-das-pre-exercises/code/MyZPeak_cfg.py -O $CMSSW_BASE/src/MyZPeak_cfg.py
+> wget https://cern-cms-das-2023.github.io/cms-das-pre-exercises/code/MyZPeakAnalyzer-CMSSW_10_6_18.cc -O $CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc
+> wget https://cern-cms-das-2023.github.io/cms-das-pre-exercises/code/MyZPeak_cfg.py -O $CMSSW_BASE/src/MyZPeak_cfg.py
 > ~~~
 > {: .source}
 {: .callout}
@@ -118,13 +118,10 @@ Successful running of the above config file will produce an output file `myZPeak
 
 > ## Note
 > 
-> In the case above, the file `MyZPeak_cfg`.py will read from area `root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/`. You should have a similar location from where you can read your [CRAB][crab] output `ROOT` files. You can edit the `MyZPeak_cfg.py` file to use the [MiniAOD][miniaod] files you made in [Exercise 13]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}#exercise-13---running-on-dataset-with-crab) by replacing the location of the input files to the path of file you generated"
+> In the case above, the file `MyZPeak_cfg`.py will read from area `root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/`. You should have a similar location from where you can read your [CRAB][crab] output `ROOT` files. You can edit the `MyZPeak_cfg.py` file to use the [MiniAOD][miniaod] files you made in [Exercise 13]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}#exercise-13---running-on-dataset-with-crab) by replacing the location of the input files to the path of file you generated. From my side, the files are stored in:
 > 
 > ```
-> 'root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_1.root', (at cmslpc) or
-> 'file:/afs/cern.ch/work/d/dmoon/public/CMSDAS_Files/Exe4/slimMiniAOD_data_MuEle_1.root', (at lxplus or Bari) or
-> 'file:/cmsdas/data/pre_exercises/Exe4/slimMiniAOD_data_MuEle_1.root', (at KNU) or
-> 'file:/pnfs/desy.de/cms/tier2/store/user/your_username/DoubleMuon/crab_CMSDAS_Data_analysis_test0/160718_090558/0000/slimMiniAOD_data_MuEle_1.root' (at nafhh-cms)
+> '/eos/user/v/vmilosev/DoubleMuon/crab_CMSDAS_Data_analysis_test0/230421_160319/0000/slimMiniAOD_data_MuEle_1.root'
 > ```
 {: .callout}
 
@@ -150,8 +147,8 @@ Next, replace the existing `$CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPy
 > ## Hint
 > You can easily download the needed files by running the following commands:
 > ~~~shell
-> wget https://fnallpc.github.io/cms-das-pre-exercises/code/FWLiteWithPythonConfig.cc -O $CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPythonConfig.cc
-> wget https://fnallpc.github.io/cms-das-pre-exercises/code/parameters.py -O $CMSSW_BASE/src/parameters.py
+> wget https://cern-cms-das-2023.github.io/cms-das-pre-exercises/code/FWLiteWithPythonConfig.cc -O $CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPythonConfig.cc
+> wget https://cern-cms-das-2023.github.io/cms-das-pre-exercises/code/parameters.py -O $CMSSW_BASE/src/parameters.py
 > ~~~
 > {: . source}
 {: .callout}
@@ -159,12 +156,9 @@ Next, replace the existing `$CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPy
 > ## Note
 > In case you have completed [Exercise Set 3]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}) successfully, put the names and path of the `ROOT` files that you made yourself via submitting CRAB job, instead of those currently in `parameters.py`.
 > 
-> `parameters.py` will read from area `root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/`. You should have a similar location from where you can read your [CRAB][crab] output `ROOT` files. You can edit the `parameters.py` file to use the [MiniAOD][miniaod] files you made in [Exercise 13]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}#exercise-13---running-on-dataset-with-crab) by replacing the location of the input files:
+> `parameters.py` will read from area `root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/`. You should have a similar location from where you can read your [CRAB][crab] output `ROOT` files. You can edit the `parameters.py` file to use the [MiniAOD][miniaod] files you made in [Exercise 13]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}#exercise-13---running-on-dataset-with-crab) by replacing the location of the input files. From my side, the files are stored in:
 > ```
-> 'root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_1.root', (at cmslpc)
-> 'file:/afs/cern.ch/work/d/dmoon/public/CMSDAS_Files/Exe4/slimMiniAOD_data_MuEle_1.root', (at lxplus or Bari) or
-> 'file:/cmsdas/data/pre_exercises/Exe4/slimMiniAOD_data_MuEle_1.root', (at KNU) or
-> 'file:/pnfs/desy.de/cms/tier2/store/user/your_username/DoubleMuon/crab_CMSDAS_Data_analysis_test0/160718_090558/0000/slimMiniAOD_data_MuEle_1.root' (at nafhh-cms)
+ '/eos/user/v/vmilosev/DoubleMuon/crab_CMSDAS_Data_analysis_test0/230421_160319/0000/slimMiniAOD_data_MuEle_1.root'
 > ```
 {: .callout}
 
@@ -218,9 +212,9 @@ The main intention of fitting the Z mass peak is to show how to fit a distributi
 
 > ## File list
 > ```
+> /afs/cern.ch/cms/Tutorials/TWIKI_DATA/CMSDataAnaSch/myZPeakCRAB.root # lxplus or Bari
 > root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Output/myZPeakCRAB.root # cmslpc
 > root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Output/myZPeakCRAB_fwlite.root # cmslpc
-> /afs/cern.ch/cms/Tutorials/TWIKI_DATA/CMSDataAnaSch/myZPeakCRAB.root # lxplus or Bari
 > ```
 {: .solution}
 
