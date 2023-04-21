@@ -37,7 +37,7 @@ Here are some additional links in case you are using Windows:
 
 ## Obtain a Grid Certificate and CMS VO Registration
 
-A Grid Certificate and CMS VO registration will be needed for the next set of exercises. The registration process can be time-consuming (actions by several people are required), so it is important to start it as soon as possible. There are two main requirements which can be simply summarized: A certificate ensures that you are who you claim to be. A registration in the VO recognizes you (identified by your certificate) as a member of CMS. Use the following link for this: [Fermilab guide to getting CMS CERN grid certificate and CMS VO](http://uscms.org/uscms_at_work/physics/computing/getstarted/get_grid_cert.shtml). Both are needed to submit jobs to the grid and access files remotely using XRootD. Make sure you follow any additional instructions for US-CMS users.
+A Grid Certificate and CMS VO registration will be needed for the next set of exercises. The registration process can be time-consuming (actions by several people are required), so it is important to start it as soon as possible. There are two main requirements which can be simply summarized: A certificate ensures that you are who you claim to be. A registration in the VO recognizes you (identified by your certificate) as a member of CMS. Use the following link for this (steps 1-4): [Fermilab guide to getting CMS CERN grid certificate and CMS VO](http://uscms.org/uscms_at_work/physics/computing/getstarted/get_grid_cert.shtml). Both are needed to submit jobs to the grid and access files remotely using XRootD.
 
 ## Obtain a GitHub Account
 
