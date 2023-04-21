@@ -818,12 +818,12 @@ We will make another CRAB config file: `crabConfig_data_slimMiniAOD.py`. Copy it
  After a while, you should see something like below:
 
 ```
-CRAB project directory:		/uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0
-Task name:			211024_231817:belt_crab_CMSDAS_Data_analysis_test0
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0
+Task name:			230421_160319:vmilosev_crab_CMSDAS_Data_analysis_test0
 Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
-Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/211024_231817%3Abelt_crab_CMSDAS_Data_analysis_test0
-Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=belt&var-task=211024_231817%3Abelt_crab_CMSDAS_Data_analysis_test0&from=1635113897000&to=now
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230421_160319%3Avmilosev_crab_CMSDAS_Data_analysis_test0
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=vmilosev&var-task=230421_160319%3Avmilosev_crab_CMSDAS_Data_analysis_test0&from=1682089399000&to=now
 Status on the scheduler:	COMPLETED
 
 Jobs status:                    finished     		100.0% (31/31)
@@ -831,18 +831,18 @@ Jobs status:                    finished     		100.0% (31/31)
 Publication status of 1 dataset(s):	done         		100.0% (31/31)
 (from CRAB internal bookkeeping in transferdb)
 
-Output dataset:			/DoubleMuon/belt-crab_CMSDAS_Data_analysis_test0-dfbd2918d11fceef1aa67bdee18b8002/USER
-Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FDoubleMuon%2Fbelt-crab_CMSDAS_Data_analysis_test0-dfbd2918d11fceef1aa67bdee18b8002%2FUSER&instance=prod%2Fphys03
+Output dataset:			/DoubleMuon/vmilosev-crab_CMSDAS_Data_analysis_test0-dfbd2918d11fceef1aa67bdee18b8002/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FDoubleMuon%2Fvmilosev-crab_CMSDAS_Data_analysis_test0-dfbd2918d11fceef1aa67bdee18b8002%2FUSER&instance=prod%2Fphys03
 
 Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
 
 Summary of run jobs:
- * Memory: 28MB min, 855MB max, 544MB ave
- * Runtime: 0:04:25 min, 0:46:10 max, 0:07:33 ave
- * CPU eff: 9% min, 89% max, 64% ave
- * Waste: 2:27:43 (39% of total)
+ * Memory: 153MB min, 914MB max, 578MB ave
+ * Runtime: 0:03:25 min, 0:17:22 max, 0:07:30 ave
+ * CPU eff: 22% min, 77% max, 56% ave
+ * Waste: 0:04:15 (2% of total)
 
-Log file is /uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
 ```
 {: .output}
 
