@@ -745,7 +745,7 @@ Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/
 ```
 {: .output}
 
-**Note**: If at `lxplus`, it will write out to your eos area. You can access them from `/eos/user/$USER/SUBDIR` with `SUBDIR` being the subdirectory name you provided. Take a look at that directory. (In our example we looked at `MinBias` and named the task `CMSDAS2021_CRAB3_MC_generation_test0`. The subsequent date string depends when you started your task.)
+**Note**: If at `lxplus`, it will write out to your eos area. You can access them from `/eos/user/$U/$USER/SUBDIR` with `SUBDIR` being the subdirectory name you provided. Take a look at that directory. (In our example we looked at `MinBias` and named the task `CMSDAS2021_CRAB3_MC_generation_test0`. The subsequent date string depends when you started your task.)
 
 From the bottom of the output, you can see the name of the dataset and the DAS link to it. Congratulations! This is the your first CMS dataset.
 
@@ -892,14 +892,14 @@ Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/
 >
 {: .callout}
 
-Use the `FWLiteHistograms` executable you were using in the previous exercises to aggregate the data from all the CRAB output files. The root files created in the above step have been kept at the directory below: `/eos/uscms/store/user/$USER/DoubleMuon/crab_CMSDAS_Data_analysis_test0/` One can use the command:
+Use the `FWLiteHistograms` executable you were using in the previous exercises to aggregate the data from all the CRAB output files. The root files created in the above step have been kept at the directory below: `/eos/user/$U/$USER/DoubleMuon/crab_CMSDAS_Data_analysis_test0/` One can use the command:
 
 ``` shell
 FWLiteHistograms inputFiles=File1,File2,File3,... outputFile=ZPeak_data.root maxEvents=-1 outputEvery=100
 ```
 {: .source}
 
-In my case, `File1=root://cmseos.fnal.gov//store/user/$USER/DoubleMuon/crab_CMSDAS_Data_analysis_test0/210504_204025/0000/slimMiniAOD_data_MuEle_1.root` etc.. Make sure there is no space in `File1,File2,File3,...`
+In my case, `File1=/eos/user/v/vmilosev/DoubleMuon/crab_CMSDAS_Data_analysis_test0/230421_160319/0000/slimMiniAOD_data_MuEle_1.root` etc.. Make sure there is no space in `File1,File2,File3,...`
 
 You may look at `ZPeak_data.root` using `TBrowser`.
 
