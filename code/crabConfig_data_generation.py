@@ -20,4 +20,4 @@ config.Data.runRange = '275776-275782'
 
 
 config.section_("Site")
-config.Site.storageSite = 'T3_US_FNALLPC'
+config.Site.storageSite = 'T3_CH_CERNBOX'
