@@ -882,7 +882,7 @@ Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/
 
 > ## Question 13
 > How many events were analyzed? (n.b. the number in the above example were replaced with `X`) <BR>
-> For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
+> For CMSDAS@CERN{{ site.year }} please submit your answers for the [CMSDAS@CERN{{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
 ## Optional: View the reconstructed Z peak in the combined data
