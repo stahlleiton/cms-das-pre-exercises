@@ -59,8 +59,7 @@ For CMSDAS@CERN {{ site.year }} please submit your answers for the [CMSDAS@CERN 
 # Exercise 10 - Verify your grid certificate is OK
 
 This exercise depends on obtaining a grid certificate and VOMS membership, but does not depend on any previous exercises.
-
-After you've followed all the instructions above and installed your grid certificate, you need to verify it has all the information needed. Please install your grid certificate also on cmslpc-sl7.fnal.gov
+After you've installed your grid certificate, you need to verify it has all the information needed.
 
 Login to **lxplus.cern.ch** and initialize your proxy:
 ```shell
