@@ -94,7 +94,7 @@ If you do not have the first attribute line listed above, you have not completed
 
 ## Obtain a /store/user area
 
-This exercise depends on **successfully completing Exercise 10**. Completion of this exercise requires a users to have `/store/user/YourCERNUserName` in Tier2 or Tier3 site. (ex, `eos` area at cmslpc). A user at cmslpc should get this automatically once they have a cmslpc account, but it will **not be linked to your grid certificate unless you provided it during account application**, you can put in a Fermilab ServiceNow request following directions for [CMS Storage Space Request](http://uscms.org/uscms_at_work/computing/LPC/usingEOSAtLPC.shtml#createEOSArea). Note that after putting in the CMS Storage Space Request, it takes up to 1 business day (FNAL hours) to have your grid certificate in Fermilab's database and FNAL EOS nodes. This area would look like this for example `/store/user/haweber/` (`eosls /store/user/haweber` on **cmslpc-sl7.fnal.gov**). To understand the proper way to access files on FNAL eos refer to [Using EOS at LPC](http://uscms.org/uscms_at_work/computing/LPC/usingEOSAtLPC.shtml#checkEOS).
+This exercise depends on **successfully completing Exercise 10**. Completion of this exercise requires a users to have `/store/user/YourCERNUserName` in Tier2 or Tier3 site. (ex, `eos` area at lxplus). and a user should get this automatically once they have a lxplus account.
 
 ## CRAB Introduction
 
@@ -112,7 +112,7 @@ In this exercise, we will use `CMSSW_10_6_18`.
 You can follow the same instructions from [Exercise 3]({{ page.root }}{% link _episodes/01-CMSDataAnalysisSchoolPreExerciseFirstSet.md %}#exercise-3---setup-a-cmssw-release-area). The instructions are reproduced here:
 
 ```shell
-cd ~/nobackup/YOURWORKINGAREA
+cd ~/YOURWORKINGAREA
 
 export SCRAM_ARCH=slc7_amd64_gcc700
 ### If you are using the default tcsh shell (or csh shell)
@@ -147,7 +147,7 @@ crab --version
 {: .source}
 
 ```
-CRAB client v3.221018
+CRAB client v3.230404
 ```
 {: .output}
 
@@ -170,7 +170,7 @@ crab checkwrite --site= <site-name>
 For example:
 
 ```shell
-crab checkwrite --site=T3_US_FNALLPC
+crab checkwrite --site=T3_CH_CERNBOX
 ```
 {: .source}
 
@@ -179,35 +179,35 @@ crab checkwrite --site=T3_US_FNALLPC
 > ## Show/Hide
 > > ```
 > > Will check write permission in the default location /store/user/<username>
-> > Validating LFN /store/user/belt...
-> > LFN /store/user/belt is valid.
+> > Validating LFN /store/user/vmilosev...
+> > LFN /store/user/vmilosev is valid.
 > > Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
-> > Will check write permission in /store/user/belt on site T3_US_FNALLPC
-> > Will use PFN: davs://cmseos.fnal.gov:9000/eos/uscms/store/user/belt/crab3checkwrite_20221123_113127/crab3checkwrite_20221123_113127.tmp
+> > Will check write permission in /store/user/vmilosev on site T3_CH_CERNBOX
+> > Will use PFN: davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp
 > > 
-> > Attempting to create (dummy) directory crab3checkwrite_20221123_113127 and copy (dummy) file crab3checkwrite_20221123_113127.tmp to /store/user/belt
+> > Attempting to create (dummy) directory crab3checkwrite_20230421_105013 and copy (dummy) file crab3checkwrite_20230421_105013.tmp to /store/user/vmilosev
 > > 
-> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///uscms_data/d3/tonjes/CMSDAS2022/PreExercises/CMSSW_10_6_18/src/crab3checkwrite_20221123_113127.tmp 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/belt/crab3checkwrite_20221123_113127/crab3checkwrite_20221123_113127.tmp'
+> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab3checkwrite_20230421_105013.tmp 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp'
 > > Please wait...
 > > 
-> > Successfully created directory crab3checkwrite_20221123_113127 and copied file crab3checkwrite_20221123_113127.tmp to /store/user/belt
+> > Successfully created directory crab3checkwrite_20230421_105013 and copied file crab3checkwrite_20230421_105013.tmp to /store/user/vmilosev
 > > 
-> > Attempting to delete file davs://cmseos.fnal.gov:9000/eos/uscms/store/user/belt/crab3checkwrite_20221123_113127/crab3checkwrite_20221123_113127.tmp
+> > Attempting to delete file davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp
 > > 
-> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/belt/crab3checkwrite_20221123_113127/crab3checkwrite_20221123_113127.tmp'
+> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp'
 > > Please wait...
 > > 
-> > Successfully deleted file davs://cmseos.fnal.gov:9000/eos/uscms/store/user/belt/crab3checkwrite_20221123_113127/crab3checkwrite_20221123_113127.tmp
+> > Successfully deleted file davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp
 > > 
-> > Attempting to delete directory davs://cmseos.fnal.gov:9000/eos/uscms/store/user/belt/crab3checkwrite_20221123_113127/
+> > Attempting to delete directory davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/
 > > 
-> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://cmseos.fnal.gov:9000/eos/uscms/store/user/belt/crab3checkwrite_20221123_113127/'
+> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/'
 > > Please wait...
 > > 
-> > Successfully deleted directory davs://cmseos.fnal.gov:9000/eos/uscms/store/user/belt/crab3checkwrite_20221123_113127/
+> > Successfully deleted directory davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/
 > > 
 > > Checkwrite Result:
-> > Success: Able to write in /store/user/belt on site T3_US_FNALLPC
+> > Success: Able to write in /store/user/vmilosev on site T3_CH_CERNBOX
 > > ```
 > {: .output}
 {: .solution}
