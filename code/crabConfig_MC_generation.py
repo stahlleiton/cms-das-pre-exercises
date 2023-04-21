@@ -20,4 +20,4 @@ config.Data.publication = True
 config.Data.outputDatasetTag = 'CMSDAS2022_CRAB3_MC_generation_test0'
 
 config.section_("Site")
-config.Site.storageSite = 'T3_US_FNALLPC'
+config.Site.storageSite = 'T3_CH_CERNBOX'
