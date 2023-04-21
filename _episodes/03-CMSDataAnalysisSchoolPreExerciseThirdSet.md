@@ -154,14 +154,14 @@ CRAB client v3.230404
 
 The `/store/user` area is commonly used for output storage from CRAB. When you complete *Exercise 11*, you can follow these instructions to make sure you can read from and write to your space using CRAB command.
 
-Login to **cmslpc-sl7.fnal.gov** and initialize your proxy:
+Initialize your proxy:
 
 ```shell
 voms-proxy-init -voms cms
 ```
 {: .source}
 
-Check if you can write to the `/store/user/` area. The crab checkwrite command can be used by a user to check if he/she has write permission in a given LFN directory path (by default `/store/user/<HN-username>/`) in a given site. The syntax to be used is:
+Check if you can write to the `/store/user/` area. The crab checkwrite command can be used by a user to check if he/she has write permission in a given CERN eos directory path (by default `/store/user/<HN-username>/`) in a given site. The syntax to be used is:
 
 ```shell
 crab checkwrite --site= <site-name>
