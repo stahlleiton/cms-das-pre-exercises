@@ -75,10 +75,11 @@ voms-proxy-info -all | grep -Ei "role|subject"
 
 The response should look like this:
 ```
-subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=haweber/CN=713242/CN=Hannsjorg Weber/CN=2282089851
-subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=haweber/CN=713242/CN=Hannsjorg Weber
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=vmilosev/CN=757854/CN=Vukasin Milosevic/CN=40175424
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=vmilosev/CN=757854/CN=Vukasin Milosevic
 attribute : /cms/Role=NULL/Capability=NULL
-attribute : /cms/uscms/Role=NULL/Capability=NULL
+attribute : /cms/country/Role=NULL/Capability=NULL
+attribute : /cms/country/ch/Role=NULL/Capability=NULL
 ```
 {: .output}
 If you do not have the first attribute line listed above, you have not completed the VO registration above and you must complete it before continuing.
