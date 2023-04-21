@@ -676,10 +676,10 @@ Importing CMSSW configuration CMSDAS_MC_generation.py
 Finished importing CMSSW configuration CMSDAS_MC_generation.py
 Sending the request to the server at cmsweb.cern.ch
 Success: Your task has been delivered to the prod CRAB3 server.
-Task name: 230421_095644:vmilosev_crab_CMSDAS_MC_generation_test0
+Task name: 230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
 Project dir: crab_projects/crab_CMSDAS_MC_generation_test0
 Please use ' crab status -d crab_projects/crab_CMSDAS_MC_generation_test0 ' to check how the submission process proceeds.
-Log file is /afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
@@ -699,18 +699,15 @@ crab status crab_projects/crab_CMSDAS_MC_generation_test0
 The `crab status` command will produce an output containing the task name, the status of the task as a whole, the details of how many jobs are in which state (submitted, running, transfering, finished, cooloff, etc.) and the location of the CRAB log (`crab.log`) file. It will also print the URLs of two web pages that one can use to monitor the jobs. In summary, it should look something like this:
 
 ```
-CRAB project directory:		/afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
-Task name:			230421_095644:vmilosev_crab_CMSDAS_MC_generation_test0
-Grid scheduler - Task Worker:	crab3@vocms0120.cern.ch - crab-prod-tw01
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
+Task name:			230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
+Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
-Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230421_095644%3Avmilosev_crab_CMSDAS_MC_generation_test0
-Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=vmilosev&var-task=230421_095644%3Avmilosev_crab_CMSDAS_MC_generation_test0&from=1682067404000&to=now
-Status on the scheduler:	SUBMITTED
-
-Jobs status:                    idle         		100.0% (10/10)
-
-No publication information available yet
-Log file is /afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230421_132846%3Avmilosev_crab_CMSDAS_MC_generation_test0
+Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=vmilosev&var-task=230421_132846%3Avmilosev_crab_CMSDAS_MC_generation_test0&from=1682080126000&to=now
+Task bootstrapped at 2023-04-21 13:29:37 UTC. 19 seconds ago
+Status information will be available within a few minutes
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
