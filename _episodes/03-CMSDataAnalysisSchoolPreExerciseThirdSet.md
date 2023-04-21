@@ -745,7 +745,7 @@ Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/
 ```
 {: .output}
 
-**Note**: If at `cmslpc`, it will write out to your eos area. You can access them from `/eos/uscms/store/user/$USER/SUBDIR` with `SUBDIR` being the subdirectory name you provided. Take a look at that directory. (In our example we looked at `MinBias` and named the task `CMSDAS2021_CRAB3_MC_generation_test0`. The subsequent date string depends when you started your task.)
+**Note**: If at `lxplus`, it will write out to your eos area. You can access them from `/eos/user/$USER/SUBDIR` with `SUBDIR` being the subdirectory name you provided. Take a look at that directory. (In our example we looked at `MinBias` and named the task `CMSDAS2021_CRAB3_MC_generation_test0`. The subsequent date string depends when you started your task.)
 
 From the bottom of the output, you can see the name of the dataset and the DAS link to it. Congratulations! This is the your first CMS dataset.
 
