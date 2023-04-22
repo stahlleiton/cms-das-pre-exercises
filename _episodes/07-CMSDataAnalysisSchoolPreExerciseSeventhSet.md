@@ -684,8 +684,6 @@ INFO:    underlay of /etc/localtime required more than 50 (69) bind mounts
 If you are asked for a docker username and password, just hit
 enter twice.
 
-It's not really a great practice to bind `/eos/uscms` into the container and you really shouldn't need to use the EOS fuse mount anyway.
-
 One particular difference from Docker is that the image name needs to be prepended by `docker://` to tell Singularity that this is a Docker image. Singularity has its own registry system, which doesn't have a de facto default registry like [Docker Hub][docker-hub].
 
 As you can see from the output, Singularity first downloads the layers
