@@ -640,48 +640,44 @@ For example, debugging problems with software that arise on cross-platform softw
 
 ## Exercise 24 - Using Singularity on CMSLPC
 
-So far we've only discussed using Docker images and using the Docker runtime. For a variety of reasons Docker is not ideal for use on HPCs like CMSLPC, but luckily Singularity is. Therefore, this next section will cover how to run Docker and Singularity images in a Singularity runtime environment.
+So far we've only discussed using Docker images and using the Docker runtime. For a variety of reasons Docker is not ideal for use on machines like `lxplus`, but luckily Singularity is. Therefore, this next section will cover how to run Docker and Singularity images in a Singularity runtime environment.
 
 Before we go into any detail, you should be aware of the
 [central CMS documentation][cms-singularity].
 
 ## Running custom images with Singularity
 
-As an example, we are going to run a container using the `ubuntu:latest` image. Begin by loggin into `cmslpc-sl7`:
+As an example, we are going to run a container using the `ubuntu:latest` image. Begin by loggin into `lxplus`:
 
 ~~~shell
-ssh -Y <username>@cmslpc-sl7.fnal.gov
+ssh -Y <username>@lxplus.cern.ch
 ~~~
 {: .source}
 
 Before running Singularity, you should set the cache directory (i.e.
 the directory to which the images are being pulled) to a
-place outside your `$HOME`/AFS space (here we use the `~/nobackup` directory):
+place outside your `$HOME`/AFS space (here we use the `/tmp/user` directory):
 
 ~~~shell
-export SINGULARITY_CACHEDIR="`readlink -f /tmp/$(whoami)/`/Singularity"
-singularity shell -B `readlink $HOME` -B `readlink -f /tmp/$(whoami)/` -B /cvmfs docker://ubuntu:latest
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/Singularity"
+singularity shell -B $HOME -B /tmp/$(whoami)/ -B /cvmfs docker://ubuntu:latest
 # try accessing cvmfs inside of the container
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 ~~~
 {: .source}
 
 ~~~
+INFO:    Environment variable SINGULARITY_CACHEDIR is set, but APPTAINER_CACHEDIR is preferred
 INFO:    Converting OCI blobs to SIF format
 INFO:    Starting build...
 Getting image source signatures
-Copying blob d72e567cc804 done
-Copying blob 0f3630e5ff08 done
-Copying blob b6a83d81d1f4 done
-Copying config bbea2a0436 done
+Copying blob 2ab09b027e7f done  
+Copying config 08d22c0ceb done  
 Writing manifest to image destination
 Storing signatures
-2020/09/27 23:48:29  info unpack layer: sha256:d72e567cc804d0b637182ba23f8b9ffe101e753a39bf52cd4db6b89eb089f13b
-2020/09/27 23:48:31  info unpack layer: sha256:0f3630e5ff08d73b6ec0e22736a5c8d2d666e7b568c16f6a4ffadf8c21b9b1ad
-2020/09/27 23:48:31  info unpack layer: sha256:b6a83d81d1f4f942d37e1f17195d9c519969ed3040fc3e444740b884e44dec33
+2023/04/22 14:05:16  info unpack layer: sha256:2ab09b027e7f3a0c2e8bb1944ac46de38cebab7145f0bd6effebfe5492c818b6
 INFO:    Creating SIF file...
-INFO:    Convert SIF file to sandbox...
-WARNING: underlay of /etc/localtime required more than 50 (66) bind mounts
+INFO:    underlay of /etc/localtime required more than 50 (69) bind mounts
 ~~~
 {: .output}
 
@@ -708,9 +704,9 @@ can be read by Singularity, the Singularity Image Format (SIF). This is a somewh
 In the next example, we are executing a script with singularity using the same image.
 
 ~~~shell
-export SINGULARITY_CACHEDIR="`readlink -f /tmp/$(whoami)/`/Singularity"
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/Singularity"
 echo -e '#!/bin/bash\n\necho "Hello World!"\n' > hello_world.sh
-singularity exec -B `readlink $HOME` -B `readlink -f /tmp/$(whoami)/` docker://ubuntu:latest bash hello_world.sh
+singularity exec -B $HOME -B /tmp/$(whoami)/ docker://ubuntu:latest bash hello_world.sh
 ~~~
 {: .source}
 
@@ -729,7 +725,7 @@ You may have noticed that singularity caches both the Docker and SIF images so t
 Begin by building and storing the sandbox:
 
 ~~~shell
-export SINGULARITY_CACHEDIR="`readlink -f /tmp/$(whoami)/`/Singularity"
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/Singularity"
 singularity build --sandbox ubuntu/ docker://ubuntu:latest
 ~~~
 {: .source}
@@ -756,8 +752,8 @@ INFO:    Build complete: ubuntu/
 Once we have the sandbox we can use that when starting the container. Run the same command as before, but use the sandbox rather than the Docker image:
 
 ~~~shell
-export SINGULARITY_CACHEDIR="`readlink -f /tmp/$(whoami)/`/Singularity"
-singularity exec -B `readlink $HOME` -B `readlink -f /tmp/$(whoami)/` ubuntu/ bash hello_world.sh
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/Singularity"
+singularity exec -B $HOME -B /tmp/$(whoami)/ ubuntu/ bash hello_world.sh
 ~~~
 {: .source}
 
