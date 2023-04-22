@@ -659,7 +659,7 @@ the directory to which the images are being pulled) to a
 place outside your `$HOME`/AFS space (here we use the `/tmp/user` directory):
 
 ~~~shell
-export APPTAINER_CACHEDIR="/tmp/$(whoami)/Singularity"
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/Singularity"
 singularity shell -B $HOME -B /tmp/$(whoami)/ -B /cvmfs docker://ubuntu:latest
 # try accessing cvmfs inside of the container
 source /cvmfs/cms.cern.ch/cmsset_default.sh
@@ -704,7 +704,7 @@ can be read by Singularity, the Singularity Image Format (SIF). This is a somewh
 In the next example, we are executing a script with singularity using the same image.
 
 ~~~shell
-export APPTAINER_CACHEDIR="/tmp/$(whoami)/Singularity"
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/Singularity"
 echo -e '#!/bin/bash\n\necho "Hello World!"\n' > hello_world.sh
 singularity exec -B $HOME -B /tmp/$(whoami)/ docker://ubuntu:latest bash hello_world.sh
 ~~~
@@ -725,7 +725,7 @@ You may have noticed that singularity caches both the Docker and SIF images so t
 Begin by building and storing the sandbox:
 
 ~~~shell
-export APPTAINER_CACHEDIR="/tmp/$(whoami)/Singularity"
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/Singularity"
 singularity build --sandbox ubuntu/ docker://ubuntu:latest
 ~~~
 {: .source}
@@ -752,7 +752,7 @@ INFO:    Build complete: ubuntu/
 Once we have the sandbox we can use that when starting the container. Run the same command as before, but use the sandbox rather than the Docker image:
 
 ~~~shell
-export APPTAINER_CACHEDIR="/tmp/$(whoami)/Singularity"
+export SINGULARITY_CACHEDIR="/tmp/$(whoami)/Singularity"
 singularity exec -B $HOME -B /tmp/$(whoami)/ ubuntu/ bash hello_world.sh
 ~~~
 {: .source}
