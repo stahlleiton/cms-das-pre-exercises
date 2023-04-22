@@ -140,7 +140,8 @@ As an example, let's pull the `7` release tag of the
 [sl image](https://hub.docker.com/_/sl) (again, if it was already pulled during setup, docker won't attempt to re-pull it unless it's changed since last pulled).
 
 ~~~shell
-docker pull sl:7
+# if you have a M1 chip Mac, this may not work. In that case continue the following examples using sl instead of sl:7
+docker pull sl:7 
 docker images sl
 ~~~
 {: .source}
