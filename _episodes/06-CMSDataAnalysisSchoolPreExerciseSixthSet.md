@@ -6,7 +6,7 @@ questions:
 - "What is Jupyter?"
 - "What is pyROOT?"
 objectives:
-- "Learn how to use Jupyter and the Vanderbilt JupyterHub."
+- "Learn how to use Jupyter and the Jupyter service (SWAN) at CERN."
 - "Learn how to interact with the ROOT libraries using pyROOT."
 keypoints:
 - "pyROOT is an easy to use alternative to using the ROOT libraries in a C++ program."
@@ -35,7 +35,7 @@ Whether you use python or C++ to complete your analysis is a personal preference
 
 ## Load and execute the exercise on JupyterHub
 
-This exercise is stored completely within Jupyter notebooks. This exercise will use a premade Jupyter service hosted at [Vanderbilt](https://jupyter.accre.vanderbilt.edu/). To begin, visit [https://github.com/FNALLPC/pyROOTforCMSDAS](https://github.com/FNALLPC/pyROOTforCMSDAS) and follow the directions on the first page.
+This exercise is stored completely within Jupyter notebooks. This exercise will use a premade Jupyter service hosted at CERN, [SWAN](http://swan.web.cern.ch). To begin, visit [https://github.com/CMSDAS/pyROOTforCMSDAS](https://github.com/CMSDAS/pyROOTforCMSDAS) and follow the directions on the first page.
 
 > ## Question 19.1
 > What is the mean value of the Gaussian fit of the jet mass spectrum for jets of pt 300-400 GeV?
@@ -50,9 +50,9 @@ Advanced topics not explored in this exercise, but to be included on the pyROOT 
  - using a python analyzer to skim a TTree
  - creating plots in the CMS PubCom format 
 
-Students are encouraged to explore these and other topics on their own and to assist with the CMS effort to document pyROOT by creating your own fork of [pyROOTforCMSDAS](https://github.com/FNALLPC/pyROOTforCMSDAS) and adding to the example scripts available there. 
+Students are encouraged to explore these and other topics on their own and to assist with the CMS effort to document pyROOT by creating your own fork of [pyROOTforCMSDAS](https://github.com/CMSDAS/pyROOTforCMSDAS) and adding to the example scripts available there. 
 
 {% include links.md %}
 
 
-[Set6_form]: https://forms.gle/i5pAm573Z5JWb2Mo9
+[Set6_form]: https://forms.gle/mP22dBD7jMBf9ms19
