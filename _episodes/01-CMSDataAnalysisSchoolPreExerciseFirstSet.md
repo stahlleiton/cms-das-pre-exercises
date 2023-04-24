@@ -31,32 +31,7 @@ There are several sets of pre-exercises. As outlined above, if you are going thr
 
 # Setting up accounts and tools
 
-## Computing account
-
-To get a CERN account, please have a look at: [Get Account at CERN](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookGetAccount). Obtaining a CERN account can be time-consuming and requires response from people at CERN during CERN business hours. CERN account application starts with the institutional team leader filling out a pre-registration form, so your institutional team leader also needs to be available for this task.
-
-## Grid certificate and CMS Virtual Organization registration
-
-A Grid Certificate and CMS Virtual Organization (VO) registration will be needed for this and next set of exercises. The registration process can be time-consuming (actions by several people are required), so it is important to start it as soon as possible. There are two main requirements which can be simply summarized: A certificate ensures that you are who you claim to be. A registration in the VO recognizes your (identified by your certificate) as a member of CMS. Both are needed to submit jobs on the Grid and access files remotely using xrootd.
-
-If you do not have a grid certificate or VO membership yet, please follow the instructions here: [Get Your Grid Certificate and CMSVO](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideLcgAccess#Getting_a_personal_certificate).
-
-## Github account
-
-Since 2013, most of the CMS software are hosted on Github. In short, Git is a distributed revision control system, and Github is a web-based Git repository hosting service. In your future analysis work, version control of your analysis code will become an important task and git will be a very useful tool. A small git tutorial is waiting for you in the fifth exercise set.
-
-In order to checkout and develop CMS software, you will need a github account, which is free. In case you don’t have one already, simply go to: [https://github.com/join](https://github.com/join) and follow the instructions to create a new account. Make sure you use a username people can recognize you easily or to specify your real name.
-
-In case you already have an account you can simply use “the Sign in” dialog and put your username and password at [https://github.com/login](https://github.com/login). Make sure you register your ssh key in Github. (You don't need to use an ssh-agent, but you can try if you want to. For more about ssh-agents, [see this twiki page](https://twiki.cern.ch/twiki/bin/view/CMS/CMSGitTutorial#SSH_agent_in_logon_file).) You will learn more about Github in the fifth pre-exercise set.
-
-## Mattermost
-
-If you have not yet joined the CMSDAS@CERN {{ site.year }} Mattermost team, please do so via [this link](https://mattermost.web.cern.ch/signup_user_complete/?id=4bfb4547abnwjfq3kn6uk4ms5h&md=link&sbr=su). 
-
-Then you will be able to follow the "Pre-exercises" channel by clicking the plus symbol next to the team name, choosing "Browse Channels", and selecting "Pre-exercises". 
-As you proceed with the pre-exercises, please don't hesitate to use this channel to have any questions or clarifications, or share useful tips with other participants!
-
-If you wish to install the Mattermost desktop app, you can find the installation instructions [here](https://docs.mattermost.com/install/desktop-app-install.html).
+Before proceeding with tis and the following pre-exercises, make sure that you have gone through all the <a href="setup.html">setup</a> steps.
 
 # Exercise 1 - Simple cut and paste exercise
 
@@ -626,4 +601,4 @@ TBrowser b;
 {% include links.md %}
 
 
-[Set1_form]: https://forms.gle/i8KkgzLoAvQ9AQV6A
+[Set1_form]: https://forms.gle/TjDb4CfohBn1CUfv9

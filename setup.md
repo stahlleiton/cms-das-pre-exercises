@@ -19,8 +19,11 @@ If you have never used Mattermost at CERN, please know that you will need your C
 If you already have used Mattermost at CERN, please know that when you click direct links to channels (as you will find below) that are within the CMSDAS@CERN 2023 team, you **may** be redirected to the last Mattermost team you used. If this happens, remember to click the [signup link to join the CMSDAS@CERN 2023 team](https://mattermost.web.cern.ch/signup_user_complete/?id=4bfb4547abnwjfq3kn6uk4ms5h&md=link&sbr=su) to switch to the correct team from which you should be able to see the individual channels. If that still doesn't work, remove all cookies associated with cern.ch and restart your browser.
 
 The [Pre-exercises channel](https://mattermost.web.cern.ch/cmsdascern2023/channels/pre-exercises) will be available once you join or switch to the CMSDAS@DAS 2023 team!
+You can find it by clicking the plus symbol next to the team name, choosing "Browse Channels", and selecting "Pre-exercises". 
 
-Note that you can access Mattermost via browser or you can download the corresponding application running standalone on your laptop or smartphone. The laptop application does not work with CERN certificate login.
+Note that you can access Mattermost via browser or you can download the corresponding application running standalone on your laptop or smartphone. You can find the installation instructions [here](https://docs.mattermost.com/install/desktop-app-install.html). The laptop application does not work with CERN certificate login. 
+
+As you proceed with the pre-exercises, please don't hesitate to use this channel to have any questions or clarifications, or share useful tips with other participants!
 
 ## Support email
 
@@ -37,11 +40,14 @@ Here are some additional links in case you are using Windows:
 
 ## Obtain a Grid Certificate and CMS VO Registration
 
-A Grid Certificate and CMS VO registration will be needed for the next set of exercises. The registration process can be time-consuming (actions by several people are required), so it is important to start it as soon as possible. There are two main requirements which can be simply summarized: A certificate ensures that you are who you claim to be. A registration in the VO recognizes you (identified by your certificate) as a member of CMS. Use the following link for this (steps 1-4): [Fermilab guide to getting CMS CERN grid certificate and CMS VO](http://uscms.org/uscms_at_work/physics/computing/getstarted/get_grid_cert.shtml). Both are needed to submit jobs to the grid and access files remotely using XRootD.
+A Grid Certificate and CMS Virtual Organization (VO) registration will be needed for the following sets of exercises. The registration process can be time-consuming (actions by several people are required), so it is important to start it as soon as possible. There are two main requirements which can be simply summarized: A certificate ensures that you are who you claim to be. A registration in the VO recognizes you (identified by your certificate) as a member of CMS. Both are needed to submit jobs to the grid and access files remotely using XRootD.
+
+If you do not have a grid certificate or VO membership yet, please follow the instructions here: [Get Your Grid Certificate and CMSVO](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideLcgAccess#Getting_a_personal_certificate).
+
 
 ## Obtain a GitHub Account
 
-Since Summer 2013, most of the CMS software are hosted on [GitHub]. [GitHub] is a Git repository web-based hosting service, while Git is a distributed version control system. In your future analysis work, version control of your analysis code will become a very important task and git will be very useful. A small git tutorial will wait for you in the [fifth exercise set]({{ page.root }}{% link _episodes/05-CMSDataAnalysisSchoolPreExerciseFifthSet.md %}).
+Since 2013, most of the CMS software are hosted on [GitHub].  In short, Git is a distributed revision control system, and Github is a web-based Git repository hosting service. In your future analysis work, version control of your analysis code will become an important task and git will be a very useful tool. A small git tutorial is waiting for you in the [fifth exercise set]({{ page.root }}{% link _episodes/05-CMSDataAnalysisSchoolPreExerciseFifthSet.md %}).
 
 In order to checkout and develop CMS software, you will need a github account, which is free.
   * In case you don’t have one already, simply go to [https://github.com/join](https://github.com/join) and follow the instructions to create a new account. Make sure you use a username people can recognize easily or to specify your real name.
