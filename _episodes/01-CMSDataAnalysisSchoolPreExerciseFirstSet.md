@@ -27,11 +27,10 @@ Welcome to the first set of CMS Data Analysis School (CMSDAS) pre-exercises. The
 >
 {: .callout}
 
-There are several sets of pre-exercises. As outlined above, if you are going through the pre-exercises in preparation to attending a CMSDAS, we strongly recommend using the laptop you intend to bring to the school and logging into the computing cluster local to the school, as specified below.
+There are several sets of pre-exercises. As outlined above, if you are going through the pre-exercises in preparation for attending a CMSDAS, we strongly recommend using the laptop you intend to bring to the school and logging into the computing cluster local to the school, as specified below.
 
-# Setting up accounts and tools
-
-Before proceeding with tis and the following pre-exercises, make sure that you have gone through all the <a href="setup.html">setup</a> steps.
+> ## Note
+>Before proceeding with this and the following pre-exercises, make sure that you have gone through all <a href="../setup.html">setup</a> steps.
 
 # Exercise 1 - Simple cut and paste exercise
 
@@ -65,7 +64,7 @@ replacing `<YourUsername>` with your actual username. Enter the password. After 
 ```
 {: .source}
 
-As the exercises often require copying and pasting from instruction, we will make sure that you will have no problems. To verify if cut and paste to/from a terminal window works, first copy the script [runThisCommand.py]({{ page.root }}{% link code/runThisCommand.py %}) as follows. Once connected use the following command to copy the `runThisCommand.py` script and make it so that the script is executable (Mac/Linux/Windows):
+As the exercises often require copying and pasting from instructions, we will make sure that you will have no problems. To verify if cut and paste to/from a terminal window works, first copy the script [runThisCommand.py]({{ page.root }}{% link code/runThisCommand.py %}) as follows. Once connected use the following command to copy the `runThisCommand.py` script and make it so that the script is executable (Mac/Linux/Windows):
 ```shell
 cp /afs/cern.ch/cms/Tutorials/CMSDASatCERN23/runThisCommand.py .
 chmod +x runThisCommand.py
@@ -256,7 +255,7 @@ echo $CMSSW_BASE
 > The directory (on **lxplus**) `/afs/cern.ch/work/<initial>/<username>/CMSSW_10_6_18/src` is referred to as your *WORKING DIRECTORY*.
 {: .callout}
 
-Every time you log out or exit a session you will need to setup your environment in your working directory again. To do so, once you have executed once the steps above (assuming you have added the `source /cvmfs/cms.cern.ch/cmsset_default.(c)sh` in your `~/.tcshrc` or `~/.bash_profile` file), you can simply do:
+Every time you log out or exit a session you will need to setup your environment in your working directory again. To do so, once you have executed the steps above for the first time (assuming you have added the `source /cvmfs/cms.cern.ch/cmsset_default.(c)sh` in your `~/.tcshrc` or `~/.bash_profile` file), you can simply do:
 
 ```shell
 cd /afs/cern.ch/work/<initial>/<username>/CMSSW_10_6_18/src
@@ -411,7 +410,7 @@ vector<pat::Muon>                     "slimmedMuons"   ""        "RECO"         
 ```
 {: .output}
 
-The output of `edmDumpEventContent` has information divided into four variable width columns. The first column is the C++ class type of the data, the second is module label, the third is product instance label, and the fourth is the process name. More information is available at [Identifying Data in the Event](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookCMSSWFramework#ModularEvtContent).
+The output of `edmDumpEventContent` has information divided into four variable width columns. The first column is the C++ class type of the data, the second is the module label, the third is the product instance label, and the fourth is the process name. More information is available at [Identifying Data in the Event](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookCMSSWFramework#ModularEvtContent).
 
 Instead of the above, let us try without the option `--regex slimmedMuons`. This will dump the entire event content - a file with many lines. For this reason we'll send the output to a file called `EdmDumpEventContent.txt` with a UNIX output redirection command (then you can inspect the file with your favorite editor or with `less EdmDumpEventContent.txt`:
 
@@ -472,10 +471,10 @@ Open and look at file *EdmEventSize.txt* and locate the line containing the text
 
 # Exercise 6 - Get familiar with the MiniAOD format
 
-Analyzing physics data at CMS is a very complicated task involving multiple steps, sharing of expertise, cross checks, and comparing different analysis. To maximize physics productivity, CMS developed a high-level data tier **MiniAOD** in 2014 to serve the needs of the mainstream physics analyses while keeping a small event size (30-50 kb/event), with easy access to the algorithms developed by Physics Objects Groups (POGs) in the framework of the CMSSW offline software. The production of MiniAODs is done centrally for common samples. MiniAOD samples are commonly used for Run-2 physics analyses. More information about MiniAOD can be found in [WorkBookMiniAOD](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookMiniAOD).
+Analyzing physics data at CMS is a very complicated task involving multiple steps, sharing of expertise, cross checks, and comparing different analysis. To maximize physics productivity, CMS developed a high-level data tier **MiniAOD** in 2014 to serve the needs of mainstream physics analyses while keeping a small event size (30-50 kb/event), with easy access to the algorithms developed by Physics Objects Groups (POGs) in the framework of the CMSSW offline software. The production of MiniAODs is done centrally for common samples. MiniAOD samples are commonly used for Run-2 physics analyses. More information about MiniAOD can be found in [WorkBookMiniAOD](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookMiniAOD).
 
 > ## Note
-> A new, even more compact data tier called **NanoAOD** has been developed more recently. The goal of this tier is to centralize the ntuple production of ~50% of analyses and to keep the event size below 2kb/event. However, this pre-exercise will not cover the use of NanoAOD. More information can be found at [WorkBookNanoAOD](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookNanoAOD).
+> A new, even more compact data tier called **NanoAOD** has been developed more recently. The goal of this tier is to centralize the ntuple production of ~50% of analyses and to keep the event size below 2kb/event. This pre-exercise will not cover the use of NanoAOD, but you will get familiar with it during the school week. More information can be found at [WorkBookNanoAOD](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookNanoAOD).
 {: .callout}
 
 The main contents of the MiniAOD are:
