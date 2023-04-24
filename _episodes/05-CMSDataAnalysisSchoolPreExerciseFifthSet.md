@@ -10,7 +10,7 @@ objectives:
 - "Learn how to make and commit changes to a git repository."
 - "Learn how to create a pull request on GitHub."
 keypoints:
-- "In teract with your git configuration using `git config --global`."
+- "Interact with your git configuration using `git config --global`."
 - "Use the `git clone` command to obtain a local copy of a git repository."
 - "Add and interact with new remotes using the `git remote` command."
 - "Use the `add` and `commit` commands to add changes to the local repository."
@@ -33,7 +33,7 @@ This exercise is intended to provide you with basic familiarity with Git and [Gi
 
 ## Git Configuration
 
-Begin by setting up your .gitconfig on your local machine or cmslpc:
+Begin by setting up your .gitconfig on your local machine or lxplus:
 
 ```shell
 git config --global user.name "[Name]"
@@ -80,7 +80,7 @@ Optional settings:
 ```
 {: .source}
 
- - These make it easier to clone repositories from [GitHub] or [CERN GitLab][gitlab], respectively. For example, `git clone github:GitHATSLPC/GitHATS.git`.
+ - These make it easier to clone repositories from [GitHub] or [CERN GitLab][gitlab], respectively. For example, `git clone github:`.
 
 ```shell
          git config --global url."git@github.com:".insteadOf github:
@@ -109,7 +109,7 @@ Look carefully at the [GitHub] user interface on the main page for the [GitHATSL
 
 Fork the repository [GitHATSLPC/GitHATS](https://github.com/GitHATSLPC/GitHATS) repository by clicking "Fork" at the top right corner of the page. This makes a copy of the repository under your [GitHub] account.
 
-Clone your fork of the repository to a scratch directory on your local machine or cmslpc:
+Clone your fork of the repository to a scratch directory on your local machine or lxplus:
 
 ```shell
 mkdir scratch
@@ -407,7 +407,7 @@ Send a pull request to the master branch of the upstream repo (GitHATSLPC).
 > ## Question 18.1
 > Post the link to your pull request.
 > 
-> For CMSDAS@LPC {{ site.year }} please submit your answer at the [Google Form fifth set][Set5_form].
+> For CMSDAS@CERN {{ site.year }} please submit your answer at the [Google Form fifth set][Set5_form].
 {: .challenge}
 
 > ## Optional
@@ -423,4 +423,4 @@ Students are encouraged to explore these topics on their own at [CMSGitTutorial]
 {% include links.md %}
 
 
-[Set5_form]: https://forms.gle/DhL89BspbQRVLsHY7
+[Set5_form]: https://forms.gle/oWxP4EeYo2LcvZE68
