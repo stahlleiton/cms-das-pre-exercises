@@ -80,7 +80,7 @@ Optional settings:
 ```
 {: .source}
 
- - These make it easier to clone repositories from [GitHub] or [CERN GitLab][gitlab], respectively. For example, `git clone github:`.
+ - These make it easier to clone repositories from [GitHub] or [CERN GitLab][gitlab], respectively. For example, `git clone github:GitHATSLPC/GitHATS.git`.
 
 ```shell
          git config --global url."git@github.com:".insteadOf github:
