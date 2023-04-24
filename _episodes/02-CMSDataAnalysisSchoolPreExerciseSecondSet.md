@@ -20,7 +20,7 @@ keypoints:
 Welcome to the second set of CMSDAS pre-exercises. As you know by now, the purpose of the pre-workshop exercises is for prospective workshop attendees to become familiar with the basic software tools required to perform physics analysis at CMS before the workshop begins. Post the answers in the online response form available from the **course web area:**
 
 > ## Indico page
->[CMSDAS pre-exercises indico page](https://indico.cern.ch/e/cmsdas2023)
+>[CMSDAS pre-exercises indico page](https://indico.cern.ch/event/1257234/)
 >
 {: .callout}
 
@@ -120,7 +120,7 @@ To quit ROOT application, execute:
 {: .source}
 
 > ## Remember 
->For CMSDAS@LPC{{site.year}}  please submit your answers at the [Google Form second set][Set2_form].
+>For CMSDAS@CERN{{site.year}}  please submit your answers at the [Google Form second set][Set2_form].
 {: .objectives}
 
 > ## Question 7.1a
@@ -144,12 +144,10 @@ To quit ROOT application, execute:
 > What is the size of the slimmed output file compared to the original sample?
 {: .challenge}
 
-Compare one of your slimmed output files to the original MiniAOD file it came from. To find sizes in EOS, you can use  [`eosls -alh /store/user/filepath/filename.root`](https://uscms.org/uscms_at_work/computing/LPC/usingEOSAtLPC.shtml#listFilesOnEOS) with the appropriate username, path and filename.
+Compare one of your slimmed output files to the original MiniAOD file it came from. To find sizes of the files in EOS, you can use e.g., [`edmFileUtil -l root://cms-xrd-global.cern.ch///store/user/filepath/filename.root`](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookEdmUtilities#edm_FileUtil) with the appropriate path and filename.
 
 > ## Question 7.3b
-> Is the mean eta for muons for MC and data the same as in the original sample in Exercise 6?
-{: .challenge}
-
+> Is the mean eta of muons for MC and data the same as in the MC and data samples in Exercise 6?
 
 # Exercise 8 -  Use FWLite on the MiniAOD created in Exercise 7 and make a Z Peak (applying `pt` and `eta` cuts)
 
@@ -334,4 +332,4 @@ Then answer the following question.
 {% include links.md %}
 
 
-[Set2_form]: https://forms.gle/us8xaot3tGQeZwt47
+[Set2_form]: https://forms.gle/ZoapthaYVCeB362s5
