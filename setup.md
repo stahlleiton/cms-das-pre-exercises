@@ -6,9 +6,7 @@ questions:
 - "Who can I contact if I need help with the pre-exercises?"
 ---
 
-# Basic Linux
-
-If you have not used the Linux command line before, you may learn more at [WorkBookBasicLinux](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookBasicLinux).
+# Getting Help
 
 ## Mattermost (chat)
 
@@ -25,25 +23,23 @@ Note that you can access Mattermost via browser or you can download the correspo
 
 As you proceed with the pre-exercises, please don't hesitate to use this channel to have any questions or clarifications, or share useful tips with other participants!
 
-## Support email
+## Support Email
 
 For CMSDAS@CERN 2023, you may e-mail [cmsdas-cern-organizers@cern.ch](mailto:cmsdas-cern-organizers@cern.ch) with a detailed description of your problem. The instructors will be happy to help you.
 
-# Obtain a Computer Account
+# Setting Up Tools
+
+If you have not used the Linux command line before, you may learn more at [WorkBookBasicLinux](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookBasicLinux).
+
+## Obtain a Computer Account
 
 To get a CERN account, please have a look at [Get Account at CERN](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookGetAccount). Obtaining a CERN account can be time-consuming and requires response from people at CERN during CERN business hours. CERN account application starts with the institutional team leader filling out a pre-registration form, so your institutional team leader also needs to be available for this task.
-
-Here are some additional links in case you are using Windows:
-  * [Hints for setting up Cygwin - preferred](http://uscms.org/uscms_at_work/physics/computing/getstarted/uaf.shtml#windowsXServers)
-  * How to install and configure [PuTTy](http://uscms.org/uscms_at_work/physics/computing/getstarted/uaf.shtml#windowsKerberosPuTTY)
-
 
 ## Obtain a Grid Certificate and CMS VO Registration
 
 A Grid Certificate and CMS Virtual Organization (VO) registration will be needed for the following sets of exercises. The registration process can be time-consuming (actions by several people are required), so it is important to start it as soon as possible. There are two main requirements which can be simply summarized: A certificate ensures that you are who you claim to be. A registration in the VO recognizes you (identified by your certificate) as a member of CMS. Both are needed to submit jobs to the grid and access files remotely using XRootD.
 
 If you do not have a grid certificate or VO membership yet, please follow the instructions here: [Get Your Grid Certificate and CMSVO](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideLcgAccess#Getting_a_personal_certificate).
-
 
 ## Obtain a GitHub Account
 
@@ -55,16 +51,21 @@ In order to checkout and develop CMS software, you will need a github account, w
   * Make sure you register your ssh key in [GitHub]. You can register more than one ssh key and it's usually a good idea to do so for every computer/cluster on which you regularly work (i.e. you laptop, CERN lxplus machines, your university cluster, etc.). You don't need to use an ssh-agent, but you can try if you want to. For more about ssh-agents, see [CMSGitTutorial#SSH_agent_in_logon_file](https://twiki.cern.ch/twiki/bin/view/CMSPublic/CMSGitTutorialPublic#SSH_agent_in_logon_file).
   * You will learn more about [GitHub] in the [fifth set of exercises]({{ page.root }}{% link _episodes/05-CMSDataAnalysisSchoolPreExerciseFifthSet.md %}).
 
-# Install Docker
+## Install Docker
 
 To install Docker Community Edition on your Linux, Mac, or Windows 10 (Pro, Enterprise, and Education) machine follow the [instructions in the Docker docs](https://docs.docker.com/get-docker/). If you are using Windows 10 Home you will need to follow [this Docker doc](https://docs.docker.com/docker-for-windows/install-windows-home/). Fair warning, the Windows 10 Home installation is more involved and requires Windows Subsystem for Linux 2 (WSL2), among other intricacies.
-
-## Windows specific setup
-
-If you would like to use cygwin, you will need to install [winpty](https://github.com/rprichard/winpty) and prefix your docker command like `winpty docker`.
 
 ## Docker Hub
 
 To sign up for Docker Hub, follow the instructions [here](https://hub.docker.com/signup).
+
+## Some Windows Specific Tools
+
+If you are using Microsoft Windows on your computer, consider installing [Cygwin](https://www.cygwin.com/) that provides Unix-like environment and command line interface.
+More installation instructions e.g. [here](http://uscms.org/uscms_at_work/physics/computing/getstarted/uaf.shtml#windowsXServers).
+
+If you would like to use Dockwe with cygwin, you will need to install [winpty](https://github.com/rprichard/winpty) and prefix your docker command like `winpty docker`.
+
+You may also benefit from installing an SSH client, such as [PuTTY](https://www.putty.org/). More instructions to install and configure it  [here](http://uscms.org/uscms_at_work/physics/computing/getstarted/uaf.shtml#windowsKerberosPuTTY).
 
 {% include links.md %}
