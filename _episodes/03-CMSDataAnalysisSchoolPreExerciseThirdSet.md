@@ -221,7 +221,7 @@ crab checkwrite --site=T3_CH_CERNBOX
 {: .challenge}
 
 
-# Exercise 12 - Generate and publish a minimum bias dataset with CRAB
+# Exercise 12 - Generate (and publish) a minimum bias dataset with CRAB
 
 ## CMSSW configuration file to generate MC events
 
