@@ -455,7 +455,7 @@ Finally we will execute `edmEventSize` to determine the size of different branch
 At **lxplus** execute the following command:
 
 ```shell
-edmEventSize -v root://cms-xrd-global.cern.ch//store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root > EdmEventSize.txt
+edmEventSize -v `edmFileUtil -d root://cmsxrootd-site.fnal.gov//store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root` > EdmEventSize.txt
 ```
 {: .source}
 
