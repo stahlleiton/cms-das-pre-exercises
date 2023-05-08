@@ -100,7 +100,7 @@ This exercise depends on **successfully completing Exercise 10**. Completion of 
 ## CRAB Introduction
 
 In this exercise, you will learn an important tool [CRAB](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCrab), which is used
-in all the data analysis at CMS. CRAB (CMS Remote Analysis Builder) is a utility to submit CMSSW jobs to distributed computing resources. By using CRAB you will be able to access CMS data and Monte-Carlo which are distributed to CMS aligned centres worldwide and exploit the CPU and storage resources at CMS aligned centres. You will also test your grid certificate and your cmslpc EOS storage element which will be useful during CMSDAS@LPC{{ site.year }}.
+in all the data analysis at CMS. CRAB (CMS Remote Analysis Builder) is a utility to submit CMSSW jobs to distributed computing resources. By using CRAB you will be able to access CMS data and Monte-Carlo which are distributed to CMS aligned centres worldwide and exploit the CPU and storage resources at CMS aligned centres. You will also test your grid certificate and your cms EOS storage element which will be useful during CMSDAS@LPC{{ site.year }}.
 
 *Help* or *questions* about CRAB: Follow the [FAQ](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideCrab#Getting_support) to get help with CRAB.
 
@@ -217,7 +217,7 @@ crab checkwrite --site=T3_CH_CERNBOX
 
 > ## Question 11
 > What is the name of your directory name in eos? <br>
-> For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
+> For CMSDAS@CERN{{ site.year }} please submit your answers for the [CMSDAS@CERN{{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
 
@@ -619,7 +619,7 @@ This MC generation code will then produce an EDM output file called `step1.root`
 
 > ## Question 12.1
 > What is the file size of `step1.root`? <br>
-> For CMSDAS@LPC{{ site.year }} please submit your answers for the [CMSDAS@LPC{{ site.year }} Google Form third set][Set3_form].
+> For CMSDAS@CERN{{ site.year }} please submit your answers for the [CMSDAS@CERN{{ site.year }} Google Form third set][Set3_form].
 {: .challenge}
 
 ## Generate MC dataset using CRAB
