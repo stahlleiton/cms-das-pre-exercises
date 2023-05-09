@@ -194,12 +194,12 @@ setenv CMSSW_GIT_REFERENCE /cvmfs/cms.cern.ch/cmssw.git.daily
 > Actually you should edit your `~/.tcshrc` file (or `~/.bash_profile` if bash is your default shell), create it if you do not have one, to include the above commands so that they are automatically executed after login and you do not have to execute them manually each time you log into the cluster.
 {: .callout}
 
-For the following exercises, or generally when you start working with larger scripts, code repositories, configuration files and possibly larger input and output files, it is a good idea NOT to do this inside your lxplus home directory, but in an area with more disk space. For example, on CERN lxplus, every user has an AFS home directory of the form `/afs/cern.ch/user/z/zorro` (for a user named Zorro), which is backed-up daily but has a maximum space of 10 GB. In addition to this, each user has a work directory `/afs/cern.ch/work/z/zorro` with a maximum disk space quota of 100 GB. You can see how much you are using right now (and request more space up to the maximum mentioned) at the [CERN Resources Portal](https://resources.web.cern.ch/resources/Manage/AFS/Settings.aspx).
+For the following exercises, or generally when you start working with larger scripts, code repositories, configuration files and possibly larger input and output files, it is a good idea NOT to do this inside your lxplus home directory, but in an area with more disk space. We won't stop you if you wish to use your afs user space, but have in mind that you might face a "disk quota full" problem at some point in time. An alternative can for example, on CERN lxplus, arises in the fact that every user has an eos user home directory of the form `/eos/user/z/zorro` (for a user named Zorro) that can be used for "heavier" projects.
 
 Now let us proceed with the creation of a working area (called YOURWORKINGAREA in the following):
 
 ```shell
-cd /afs/cern.ch/work/<first-letter-of-username>/<username>
+cd /eos/user/<first-letter-of-username>/<username>
 mkdir YOURWORKINGAREA
 cd YOURWORKINGAREA
 ### If you are using Bash shell
@@ -252,13 +252,13 @@ echo $CMSSW_BASE
 {: .challenge}
 
 > ## Note
-> The directory (on **lxplus**) `/afs/cern.ch/work/<initial>/<username>/CMSSW_10_6_18/src` is referred to as your *WORKING DIRECTORY*.
+> The directory (on **lxplus**) `/eos/user/<initial>/<username>/CMSSW_10_6_18/src` is referred to as your *WORKING DIRECTORY*.
 {: .callout}
 
 Every time you log out or exit a session you will need to setup your environment in your working directory again. To do so, once you have executed the steps above for the first time (assuming you have added the `source /cvmfs/cms.cern.ch/cmsset_default.(c)sh` in your `~/.tcshrc` or `~/.bash_profile` file), you can simply do:
 
 ```shell
-cd /afs/cern.ch/work/<initial>/<username>/CMSSW_10_6_18/src
+cd /eos/user/<initial>/<username>/CMSSW_10_6_18/src
 cmsenv
 ```
 {: .source}
