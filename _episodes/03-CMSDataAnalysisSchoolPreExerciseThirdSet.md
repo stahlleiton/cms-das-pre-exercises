@@ -108,20 +108,20 @@ The most recent CRAB3 tutorial is always in the [WorkBook](https://twiki.cern.ch
 
 ## Setup CRAB
 
-In this exercise, we will use `CMSSW_10_6_18`.
+In this exercise, we will use `CMSSW_13_1_4`.
 
 You can follow the same instructions from [Exercise 3]({{ page.root }}{% link _episodes/01-CMSDataAnalysisSchoolPreExerciseFirstSet.md %}#exercise-3---setup-a-cmssw-release-area). The instructions are reproduced here:
 
 ```shell
 cd ~/YOURWORKINGAREA
 
-export SCRAM_ARCH=slc7_amd64_gcc700
+export SCRAM_ARCH=el9_amd64_gcc11
 ### If you are using the default tcsh shell (or csh shell)
-setenv SCRAM_ARCH slc7_amd64_gcc700
+setenv SCRAM_ARCH el9_amd64_gcc11
 ###
 
-cmsrel CMSSW_10_6_18
-cd CMSSW_10_6_18/src
+cmsrel CMSSW_13_1_4
+cd CMSSW_13_1_4/src
 cmsenv
 git cms-init
 ```
@@ -188,7 +188,7 @@ crab checkwrite --site=T3_CH_CERNBOX
 > > 
 > > Attempting to create (dummy) directory crab3checkwrite_20240421_105013 and copy (dummy) file crab3checkwrite_20240421_105013.tmp to /store/user/vmilosev
 > > 
-> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab3checkwrite_20240421_105013.tmp 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/crab3checkwrite_20240421_105013.tmp'
+> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_13_1_4/src/crab3checkwrite_20240421_105013.tmp 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/crab3checkwrite_20240421_105013.tmp'
 > > Please wait...
 > > 
 > > Successfully created directory crab3checkwrite_20240421_105013 and copied file crab3checkwrite_20240421_105013.tmp to /store/user/vmilosev
@@ -655,7 +655,7 @@ Below you also find the file:
 > config.Site.storageSite = 'T3_CH_CERNBOX'
 > ```
 {: .solution}
-Put the copy of  `crabConfig_MC_generation.py` under `YOURWORKINGAREA/CMSSW_10_6_18/src`.
+Put the copy of  `crabConfig_MC_generation.py` under `YOURWORKINGAREA/CMSSW_13_1_4/src`.
 
 
 All available CRAB configuration parameters are defined at [CRAB3ConfigurationFile](https://twiki.cern.ch/twiki/bin/view/CMSPublic/CRAB3ConfigurationFile).
@@ -679,11 +679,11 @@ Success: Your task has been delivered to the prod CRAB3 server.
 Task name: 230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
 Project dir: crab_projects/crab_CMSDAS_MC_generation_test0
 Please use ' crab status -d crab_projects/crab_CMSDAS_MC_generation_test0 ' to check how the submission process proceeds.
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
- Now you might notice a directory called `crab_projects` is created under `CMSSW_10_6_18/src/`. *See what is under that directory.* After you submitted the job successfully (give it a few moments), you can check the status of a task by executing the following CRAB command:
+ Now you might notice a directory called `crab_projects` is created under `CMSSW_13_1_4/src/`. *See what is under that directory.* After you submitted the job successfully (give it a few moments), you can check the status of a task by executing the following CRAB command:
 
  ```shell
  crab status [-t] <CRAB-project-directory>
@@ -699,7 +699,7 @@ crab status crab_projects/crab_CMSDAS_MC_generation_test0
 The `crab status` command will produce an output containing the task name, the status of the task as a whole, the details of how many jobs are in which state (submitted, running, transfering, finished, cooloff, etc.) and the location of the CRAB log (`crab.log`) file. It will also print the URLs of two web pages that one can use to monitor the jobs. In summary, it should look something like this:
 
 ```
-CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_MC_generation_test0
 Task name:			230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
@@ -707,7 +707,7 @@ Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230421_13284
 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=vmilosev&var-task=230421_132846%3Avmilosev_crab_CMSDAS_MC_generation_test0&from=1682080126000&to=now
 Task bootstrapped at 2024-04-21 13:29:37 UTC. 19 seconds ago
 Status information will be available within a few minutes
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
@@ -715,7 +715,7 @@ Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/
 
 ```
 [vmilosev@lxplus700 src]$ crab status crab_projects/crab_CMSDAS_MC_generation_test0/
-CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_MC_generation_test0
 Task name:			230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
@@ -741,7 +741,7 @@ Summary of run jobs:
  * CPU eff: 14% min, 58% max, 33% ave
  * Waste: 1:17:58 (62% of total)
 
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
@@ -756,11 +756,11 @@ From the bottom of the output, you can see the name of the dataset and the DAS l
 
 # Exercise 13 - Running on a dataset with CRAB
 
-Now we're going to apply what you've learned using CRAB to the `MiniAOD` exercises you've been working on in the first two sets of exercises. Make sure that you finished and still have the scripts from [Exercise 7]({{ page.root }}{% link _episodes/02-CMSDataAnalysisSchoolPreExerciseSecondSet.md %}#exercise-7---slim-miniaod-sample-to-reduce-its-size-by-keeping-only-muon-and-electron-branches) under the `YOURWORKINGAREA/CMSSW_10_6_18/src`.
+Now we're going to apply what you've learned using CRAB to the `MiniAOD` exercises you've been working on in the first two sets of exercises. Make sure that you finished and still have the scripts from [Exercise 7]({{ page.root }}{% link _episodes/02-CMSDataAnalysisSchoolPreExerciseSecondSet.md %}#exercise-7---slim-miniaod-sample-to-reduce-its-size-by-keeping-only-muon-and-electron-branches) under the `YOURWORKINGAREA/CMSSW_13_1_4/src`.
 
 ##  Set up CRAB to run your MiniAOD jobs
 
-If you forget, go back to the `YOURWORKINGAREA/CMSSW_10_6_18/src` and setup crab.
+If you forget, go back to the `YOURWORKINGAREA/CMSSW_13_1_4/src` and setup crab.
 
 ```shell
 cmsenv
@@ -818,7 +818,7 @@ We will make another CRAB config file: `crabConfig_data_slimMiniAOD.py`. Copy it
  After a while, you should see something like below:
 
 ```
-CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_Data_analysis_test0
 Task name:			230421_160319:vmilosev_crab_CMSDAS_Data_analysis_test0
 Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
@@ -842,7 +842,7 @@ Summary of run jobs:
  * CPU eff: 22% min, 77% max, 56% ave
  * Waste: 0:04:15 (2% of total)
 
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
 ```
 {: .output}
 
@@ -858,7 +858,7 @@ crab report
 You'll get something like this
 ```
 Running crab status first to fetch necessary information.
-Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
+Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
 Summary from jobs in status 'finished':
   Number of files processed: 64
   Number of events read: X
@@ -873,7 +873,7 @@ Summary from output datasets in DBS:
 Additional report lumi files:
   Input dataset lumis (from DBS, at task submission time) written to inputDatasetLumis.json
   Lumis to process written to lumisToProcess.json
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
 ```
 {: .output}
 
@@ -925,7 +925,7 @@ Enter the following command:
 
 When running `crab report`, the report will give you the location of a **JSON-formatted file** containing the luminosity information
 ```
-Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
+Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_13_1_4/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
 ```
 {: .output}
 

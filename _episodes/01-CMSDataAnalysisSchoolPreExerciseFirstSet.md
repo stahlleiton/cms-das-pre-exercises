@@ -202,12 +202,12 @@ cd /eos/user/<first-letter-of-username>/<username>
 mkdir YOURWORKINGAREA
 cd YOURWORKINGAREA
 ### If you are using Bash shell
-export SCRAM_ARCH=slc7_amd64_gcc700
+export SCRAM_ARCH=el9_amd64_gcc11
 ### Alternatively, If you are using the default tcsh shell (or csh shell)
-setenv SCRAM_ARCH slc7_amd64_gcc700
+setenv SCRAM_ARCH el9_amd64_gcc11
 ### Then, in both cases:
-cmsrel CMSSW_10_6_18
-cd CMSSW_10_6_18/src
+cmsrel CMSSW_13_1_4
+cd CMSSW_13_1_4/src
 cmsenv
 ```
 {: .source}
@@ -251,13 +251,13 @@ echo $CMSSW_BASE
 {: .challenge}
 
 > ## Note
-> The directory (on **lxplus**) `/eos/user/<initial>/<username>/CMSSW_10_6_18/src` is referred to as your *WORKING DIRECTORY*.
+> The directory (on **lxplus**) `/eos/user/<initial>/<username>/CMSSW_13_1_4/src` is referred to as your *WORKING DIRECTORY*.
 {: .callout}
 
 Every time you log out or exit a session you will need to setup your environment in your working directory again. To do so, once you have executed the steps above for the first time (assuming you have added the `source /cvmfs/cms.cern.ch/cmsset_default.(c)sh` in your `~/.tcshrc` or `~/.bash_profile` file), you can simply do:
 
 ```shell
-cd /eos/user/<initial>/<username>/CMSSW_10_6_18/src
+cd /eos/user/<initial>/<username>/CMSSW_13_1_4/src
 cmsenv
 ```
 {: .source}
