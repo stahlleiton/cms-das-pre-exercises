@@ -35,7 +35,7 @@ Whether you use python or C++ to complete your analysis is a personal preference
 
 ## Load and execute the exercise on JupyterHub
 
-This exercise is stored completely within Jupyter notebooks. This exercise will use a premade Jupyter service hosted at CERN, [SWAN](http://swan.web.cern.ch). To begin, visit [pyROOTforCMSDAS](https://github.com/CERN-CMS-DAS-2023/pyROOTforCMSDAS) and follow the directions on the first page.
+This exercise is stored completely within Jupyter notebooks. This exercise will use a premade Jupyter service hosted at CERN, [SWAN](http://swan.web.cern.ch). To begin, visit [pyROOTforCMSDAS](https://github.com/CERN-CMS-DAS-2024/pyROOTforCMSDAS) and follow the directions on the first page.
 
 > ## Question 19.1
 > What is the mean value of the Gaussian fit of the jet mass spectrum for jets of pt 300-400 GeV?

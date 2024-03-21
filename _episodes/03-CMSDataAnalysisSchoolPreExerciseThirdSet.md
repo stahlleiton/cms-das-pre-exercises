@@ -51,7 +51,7 @@ For CMSDAS@CERN {{ site.year }} please submit your answers for the [CMSDAS@CERN 
 > channels functionality) the channels setup for communications
 > related to the school. The sign-up link is
 > [here](https://mattermost.web.cern.ch/signup_user_complete/?id=4bfb4547abnwjfq3kn6uk4ms5h&md=link&sbr=su)
-> and the Pre-exercises channel can be found [here](https://mattermost.web.cern.ch/cmsdascern2023/channels/pre-exercises).
+> and the Pre-exercises channel can be found [here](https://mattermost.web.cern.ch/cmsdascern2024/channels/pre-exercises).
 >
 {: .testimonial}
 <!-- {: .support} -->
@@ -184,28 +184,28 @@ crab checkwrite --site=T3_CH_CERNBOX
 > > LFN /store/user/vmilosev is valid.
 > > Will use `gfal-copy`, `gfal-rm` commands for checking write permissions
 > > Will check write permission in /store/user/vmilosev on site T3_CH_CERNBOX
-> > Will use PFN: davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp
+> > Will use PFN: davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/crab3checkwrite_20240421_105013.tmp
 > > 
-> > Attempting to create (dummy) directory crab3checkwrite_20230421_105013 and copy (dummy) file crab3checkwrite_20230421_105013.tmp to /store/user/vmilosev
+> > Attempting to create (dummy) directory crab3checkwrite_20240421_105013 and copy (dummy) file crab3checkwrite_20240421_105013.tmp to /store/user/vmilosev
 > > 
-> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab3checkwrite_20230421_105013.tmp 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp'
+> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-copy -p -v -t 180 file:///afs/cern.ch/user/v/vmilosev/Test_CMSDAS_Crab/CMSSW_10_6_18/src/crab3checkwrite_20240421_105013.tmp 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/crab3checkwrite_20240421_105013.tmp'
 > > Please wait...
 > > 
-> > Successfully created directory crab3checkwrite_20230421_105013 and copied file crab3checkwrite_20230421_105013.tmp to /store/user/vmilosev
+> > Successfully created directory crab3checkwrite_20240421_105013 and copied file crab3checkwrite_20240421_105013.tmp to /store/user/vmilosev
 > > 
-> > Attempting to delete file davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp
+> > Attempting to delete file davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/crab3checkwrite_20240421_105013.tmp
 > > 
-> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp'
+> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -v -t 180 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/crab3checkwrite_20240421_105013.tmp'
 > > Please wait...
 > > 
-> > Successfully deleted file davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/crab3checkwrite_20230421_105013.tmp
+> > Successfully deleted file davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/crab3checkwrite_20240421_105013.tmp
 > > 
-> > Attempting to delete directory davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/
+> > Attempting to delete directory davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/
 > > 
-> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/'
+> > Executing command: which scram >/dev/null 2>&1 && eval `scram unsetenv -sh`; gfal-rm -r -v -t 180 'davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/'
 > > Please wait...
 > > 
-> > Successfully deleted directory davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20230421_105013/
+> > Successfully deleted directory davs://eosuserhttp.cern.ch:443//eos/user/v/vmilosev/crab3checkwrite_20240421_105013/
 > > 
 > > Checkwrite Result:
 > > Success: Able to write in /store/user/vmilosev on site T3_CH_CERNBOX
@@ -272,7 +272,7 @@ This MC generation code will then produce an EDM output file called `step1.root`
 > |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
 > |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
 > |  |   P       Y      T    H   H   I   A   A                                      |  | 
-> |  |   P       Y      T    H   H  III  A   A    Now is 21 Apr 2023 at 11:32:03    |  | 
+> |  |   P       Y      T    H   H  III  A   A    Now is 21 Apr 2024 at 11:32:03    |  | 
 > |  |                                                                              |  | 
 > |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
 > |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
@@ -338,7 +338,7 @@ This MC generation code will then produce an EDM output file called `step1.root`
 > |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.240      |  | 
 > |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 20 Dec 2018  |  | 
 > |  |   P       Y      T    H   H   I   A   A                                      |  | 
-> |  |   P       Y      T    H   H  III  A   A    Now is 21 Apr 2023 at 11:32:03    |  | 
+> |  |   P       Y      T    H   H  III  A   A    Now is 21 Apr 2024 at 11:32:03    |  | 
 > |  |                                                                              |  | 
 > |  |   Christian Bierlich;  Department of Astronomy and Theoretical Physics,      |  | 
 > |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
@@ -507,7 +507,7 @@ This MC generation code will then produce an EDM output file called `step1.root`
 >
 > --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
 >
-> Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:06.079 CEST
+> Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:06.079 CEST
 >
 > --------  PYTHIA Info Listing  ---------------------------------------- 
 > 
@@ -543,15 +543,15 @@ This MC generation code will then produce an EDM output file called `step1.root`
 >                                    Charge sum: -0.667           Momentum sum:      0.000      0.000     -8.967      9.739      3.799
 > 
 >  --------  End PYTHIA Event Listing  -----------------------------------------------------------------------------------------------
-> Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:09.990 CEST
-> Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:11.147 CEST
-> Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:15.916 CEST
-> Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:15.918 CEST
-> Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:22.698 CEST
-> Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:22.858 CEST
-> Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:25.345 CEST
-> Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:26.413 CEST
-> Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 21-Apr-2023 11:32:39.373 CEST
+> Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:09.990 CEST
+> Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:11.147 CEST
+> Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:15.916 CEST
+> Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:15.918 CEST
+> Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:22.698 CEST
+> Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:22.858 CEST
+> Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:25.345 CEST
+> Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:26.413 CEST
+> Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 21-Apr-2024 11:32:39.373 CEST
 > 
 > *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
 > |                                                                                                                 |
@@ -649,7 +649,7 @@ Below you also find the file:
 > NJOBS = 10  # This is not a configuration parameter, but an auxiliary variable that we use in the next line.
 > config.Data.totalUnits = config.Data.unitsPerJob * NJOBS
 > config.Data.publication = True
-> config.Data.outputDatasetTag = 'CMSDAS2023_CRAB3_MC_generation_test0'
+> config.Data.outputDatasetTag = 'CMSDAS2024_CRAB3_MC_generation_test0'
 >
 > config.section_("Site")
 > config.Site.storageSite = 'T3_CH_CERNBOX'
@@ -679,7 +679,7 @@ Success: Your task has been delivered to the prod CRAB3 server.
 Task name: 230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
 Project dir: crab_projects/crab_CMSDAS_MC_generation_test0
 Please use ' crab status -d crab_projects/crab_CMSDAS_MC_generation_test0 ' to check how the submission process proceeds.
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
@@ -699,15 +699,15 @@ crab status crab_projects/crab_CMSDAS_MC_generation_test0
 The `crab status` command will produce an output containing the task name, the status of the task as a whole, the details of how many jobs are in which state (submitted, running, transfering, finished, cooloff, etc.) and the location of the CRAB log (`crab.log`) file. It will also print the URLs of two web pages that one can use to monitor the jobs. In summary, it should look something like this:
 
 ```
-CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
 Task name:			230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/230421_132846%3Avmilosev_crab_CMSDAS_MC_generation_test0
 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=vmilosev&var-task=230421_132846%3Avmilosev_crab_CMSDAS_MC_generation_test0&from=1682080126000&to=now
-Task bootstrapped at 2023-04-21 13:29:37 UTC. 19 seconds ago
+Task bootstrapped at 2024-04-21 13:29:37 UTC. 19 seconds ago
 Status information will be available within a few minutes
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
@@ -715,7 +715,7 @@ Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/
 
 ```
 [vmilosev@lxplus700 src]$ crab status crab_projects/crab_CMSDAS_MC_generation_test0/
-CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0
 Task name:			230421_132846:vmilosev_crab_CMSDAS_MC_generation_test0
 Grid scheduler - Task Worker:	crab3@vocms0196.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
@@ -728,8 +728,8 @@ Jobs status:                    finished     		100.0% (10/10)
 Publication status of 1 dataset(s):	done         		100.0% (10/10)
 (from CRAB internal bookkeeping in transferdb)
 
-Output dataset:			/MinBias/vmilosev-CMSDAS2023_CRAB3_MC_generation_test0-67359df6f8a0ef3c567d7c8fea38a809/USER
-Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FMinBias%2Fvmilosev-CMSDAS2023_CRAB3_MC_generation_test0-67359df6f8a0ef3c567d7c8fea38a809%2FUSER&instance=prod%2Fphys03
+Output dataset:			/MinBias/vmilosev-CMSDAS2024_CRAB3_MC_generation_test0-67359df6f8a0ef3c567d7c8fea38a809/USER
+Output dataset DAS URL:		https://cmsweb.cern.ch/das/request?input=%2FMinBias%2Fvmilosev-CMSDAS2024_CRAB3_MC_generation_test0-67359df6f8a0ef3c567d7c8fea38a809%2FUSER&instance=prod%2Fphys03
 
 Warning: the max jobs runtime is less than 30% of the task requested value (1250 min), please consider to request a lower value for failed jobs (allowed through crab resubmit) and/or improve the jobs splitting (e.g. config.Data.splitting = 'Automatic') in a new task.
 
@@ -741,7 +741,7 @@ Summary of run jobs:
  * CPU eff: 14% min, 58% max, 33% ave
  * Waste: 1:17:58 (62% of total)
 
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_MC_generation_test0/crab.log
 ```
 {: .output}
 
@@ -818,7 +818,7 @@ We will make another CRAB config file: `crabConfig_data_slimMiniAOD.py`. Copy it
  After a while, you should see something like below:
 
 ```
-CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0
+CRAB project directory:		/afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0
 Task name:			230421_160319:vmilosev_crab_CMSDAS_Data_analysis_test0
 Grid scheduler - Task Worker:	crab3@vocms0199.cern.ch - crab-prod-tw01
 Status on the CRAB server:	SUBMITTED
@@ -842,7 +842,7 @@ Summary of run jobs:
  * CPU eff: 22% min, 77% max, 56% ave
  * Waste: 0:04:15 (2% of total)
 
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
 ```
 {: .output}
 
@@ -858,7 +858,7 @@ crab report
 You'll get something like this
 ```
 Running crab status first to fetch necessary information.
-Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
+Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
 Summary from jobs in status 'finished':
   Number of files processed: 64
   Number of events read: X
@@ -873,7 +873,7 @@ Summary from output datasets in DBS:
 Additional report lumi files:
   Input dataset lumis (from DBS, at task submission time) written to inputDatasetLumis.json
   Lumis to process written to lumisToProcess.json
-Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
+Log file is /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/crab.log
 ```
 {: .output}
 
@@ -925,7 +925,7 @@ Enter the following command:
 
 When running `crab report`, the report will give you the location of a **JSON-formatted file** containing the luminosity information
 ```
-Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2023/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
+Will save lumi files into output directory /afs/cern.ch/user/v/vmilosev/CMSDAS2024/Pre-exercises/CMSSW_10_6_18/src/crab_projects/crab_CMSDAS_Data_analysis_test0/results
 ```
 {: .output}
 
@@ -981,7 +981,7 @@ In the example of that other json file, the total recorded luminosity for those 
 Note also that all CMS members using the Grid subscribe to the [Grid Annoucements CMS HyperNews forum](https://hypernews.cern.ch/HyperNews/CMS/get/gridAnnounce.html). Important CRAB announcements will be announced on the [CERN Computing Announcement HyperNews forum](https://hypernews.cern.ch/HyperNews/CMS/get/cernCompAnnounce.html). <br>
 
 <br><br>
-_Last reviewed: 2023/04/20 by Vukasin Milosevic
+_Last reviewed: 2024/04/20 by Vukasin Milosevic
 <br>
 
 {% include links.md %}

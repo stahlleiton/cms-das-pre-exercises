@@ -20,7 +20,7 @@ keypoints:
 
 # Introduction
 
-Welcome to the first set of CMS Data Analysis School (CMSDAS) pre-exercises. The purpose of these exercises is to become familiar with the basic software tools required to perform physics analysis at the school. Please run and complete these exercises. Throughout the exercises there will be questions for you to answer. Submit your answers in the online response form available from **the course web area** - For CMSDAS@CERN {{ site.year }}, Fermilab, the complete set of links can be found at the [CMSDAS pre-exercises indico page](https://indico.cern.ch/e/cmsdas2023cern). A large amount of additional information about these topics is available in the twikis that we reference. Please remember that twikis evolve but aim to provide the best information at any time.
+Welcome to the first set of CMS Data Analysis School (CMSDAS) pre-exercises. The purpose of these exercises is to become familiar with the basic software tools required to perform physics analysis at the school. Please run and complete these exercises. Throughout the exercises there will be questions for you to answer. Submit your answers in the online response form available from **the course web area** - For CMSDAS@CERN {{ site.year }}, Fermilab, the complete set of links can be found at the [CMSDAS pre-exercises indico page](https://indico.cern.ch/e/cmsdas2024cern). A large amount of additional information about these topics is available in the twikis that we reference. Please remember that twikis evolve but aim to provide the best information at any time.
 
 > ## Note
 > The CMSDAS exercises (pre-exercises as well as exercises during the school) are intended to be as generic as possible. However, CMSDAS is held at different CMS collaborating institutes - e.g. CERN, the LPC at Fermilab, DESY, etc.) Participants are expected to request and obtain local (at the intended school location) computer accounts well in advance of the school start date, to ensure they will be able to work right away. **In the case of the CMSDAS@CERN {{ site.year }}, the computer account you should use for all exercises is the standard [CERN computing account](https://account.cern.ch/account)**. It is very important for participants to use the pre-exercises as a setup tool, so we recommend to **use the same laptop they intend to bring with them at the school** (no computer/laptop will be provided at the school), and to **connect to the CERN computing resources that will be used for the school**.
@@ -304,25 +304,25 @@ dataset file=/store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_rea
 
 and hit "Enter".
 
-Now we will locate a fresh 2023 collisions dataset using the keyword search, which is often convenient if you know the dataset you are looking for.
+Now we will locate a fresh 2024 collisions dataset using the keyword search, which is often convenient if you know the dataset you are looking for.
 In this example, the dataset that we are looking for is the "MuonEG" dataset (which contains events with a muon plus an electron or photon).
 
 In [DAS](https://cmsweb.cern.ch/das/) type:
 
 ```
-dataset=/MuonEG/*Run2023A*/MINIAOD*
+dataset=/MuonEG/*Run2024A*/MINIAOD*
 ```
 {: .source}
 
 and hit "Enter".
 
 > ## Question 4.2
-> What release was the dataset **/MuonEG/Run2023A-PromptReco-v2/MINIAOD** collected in?
+> What release was the dataset **/MuonEG/Run2024A-PromptReco-v2/MINIAOD** collected in?
 >
 > **Note:** If you see more than one release, just answer with a single release.
 {: .challenge}
 
-Having set your CMSSW environment one can also search for the dataset **/MuonEG/Run2023A-PromptReco-v2/MINIAOD** by invoking the [DAS][das] command in your *WORKING DIRECTORY*. The [DAS][das] command `dasgoclient` is in the path for CMSSW_9_X_Y versions and above, so you do not need to download anything additional. More about `dasgoclient` can be found [here](https://cmsweb.cern.ch/das/faq).
+Having set your CMSSW environment one can also search for the dataset **/MuonEG/Run2024A-PromptReco-v2/MINIAOD** by invoking the [DAS][das] command in your *WORKING DIRECTORY*. The [DAS][das] command `dasgoclient` is in the path for CMSSW_9_X_Y versions and above, so you do not need to download anything additional. More about `dasgoclient` can be found [here](https://cmsweb.cern.ch/das/faq).
 
 First, we need to initialize the Grid proxy:
 
@@ -334,14 +334,14 @@ voms-proxy-init --valid 192:00 --voms cms
 You will be asked for your grid certificate passphrase. Then you can execute the query with:
 
 ```shell
-dasgoclient --query="dataset=/MuonEG/Run2023A-PromptReco-v2/MINIAOD" --format=plain
+dasgoclient --query="dataset=/MuonEG/Run2024A-PromptReco-v2/MINIAOD" --format=plain
 ```
 {: .source}
 
 You will see something like:
 
 ```
-/MuonEG/Run2023A-PromptReco-v2/MINIAOD
+/MuonEG/Run2024A-PromptReco-v2/MINIAOD
 ```
 {: .output}
 
@@ -361,11 +361,11 @@ If you are working in the US, it is best to use the redirector `cmsxrootd.fnal.g
 
 In the examples below, `cms-xrd-global.cern.ch` is always used, but feel free to replace that with a choice more appropriate for your region.
 
-To open a file from the `MuonEG` 2023A file (stored at CERN), with ROOT:
+To open a file from the `MuonEG` 2024A file (stored at CERN), with ROOT:
 
 ```shell
 root -l
-TFile *f =TFile::Open("root://cms-xrd-global.cern.ch///store/data/Run2023A/MuonEG/MINIAOD/PromptReco-v2/000/366/323/00000/f2b1462f-6d41-4b11-b8e3-7624af2e29bf.root");
+TFile *f =TFile::Open("root://cms-xrd-global.cern.ch///store/data/Run2024A/MuonEG/MINIAOD/PromptReco-v2/000/366/323/00000/f2b1462f-6d41-4b11-b8e3-7624af2e29bf.root");
 ```
 {: .source}
 

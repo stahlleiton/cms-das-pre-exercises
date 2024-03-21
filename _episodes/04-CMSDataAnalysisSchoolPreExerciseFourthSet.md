@@ -33,37 +33,37 @@ In this exercise we will analyze the skimmed [MiniAODs][miniaod] created in the 
 
 > ## Example file list
 > ```
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_1.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_10.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_11.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_12.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_13.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_14.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_15.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_16.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_17.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_18.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_19.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_2.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_20.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_21.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_22.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_23.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_24.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_25.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_26.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_27.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_28.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_29.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_3.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_30.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_31.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_4.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_5.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_6.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_7.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_8.root
-> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_9.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_1.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_10.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_11.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_12.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_13.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_14.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_15.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_16.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_17.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_18.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_19.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_2.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_20.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_21.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_22.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_23.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_24.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_25.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_26.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_27.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_28.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_29.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_3.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_30.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_31.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_4.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_5.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_6.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_7.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_8.root
+> root://cmseos.fnal.gov//eos/uscms/store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/slimMiniAOD_data_MuEle_9.root
 > ```
 {: .solution}
 
@@ -86,8 +86,8 @@ Next, create the following two files (download/save): [$CMSSW_BASE/src/PhysicsTo
 > ## Hint
 > A quick way to do this on Linux, or any machine with `wget`, is by using the following commands:
 > ~~~shell
-> wget https://cern-cms-das-2023.github.io/cms-das-pre-exercises/code/MyZPeakAnalyzer-CMSSW_10_6_18.cc -O $CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc
-> wget https://cern-cms-das-2023.github.io/cms-das-pre-exercises/code/MyZPeak_cfg.py -O $CMSSW_BASE/src/MyZPeak_cfg.py
+> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/MyZPeakAnalyzer-CMSSW_10_6_18.cc -O $CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc
+> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/MyZPeak_cfg.py -O $CMSSW_BASE/src/MyZPeak_cfg.py
 > ~~~
 > {: .source}
 {: .callout}
@@ -118,7 +118,7 @@ Successful running of the above config file will produce an output file `myZPeak
 
 > ## Note
 > 
-> In the case above, the file `MyZPeak_cfg`.py will read from area `root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/`. You should have a similar location from where you can read your [CRAB][crab] output `ROOT` files. You can edit the `MyZPeak_cfg.py` file to use the [MiniAOD][miniaod] files you made in [Exercise 13]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}#exercise-13---running-on-dataset-with-crab) by replacing the location of the input files to the path of file you generated. From my side, the files are stored in:
+> In the case above, the file `MyZPeak_cfg`.py will read from area `root://cmseos.fnal.gov//store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/`. You should have a similar location from where you can read your [CRAB][crab] output `ROOT` files. You can edit the `MyZPeak_cfg.py` file to use the [MiniAOD][miniaod] files you made in [Exercise 13]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}#exercise-13---running-on-dataset-with-crab) by replacing the location of the input files to the path of file you generated. From my side, the files are stored in:
 > 
 > ```
 > '/eos/user/v/vmilosev/DoubleMuon/crab_CMSDAS_Data_analysis_test0/230421_160319/0000/slimMiniAOD_data_MuEle_1.root'
@@ -147,8 +147,8 @@ Next, replace the existing `$CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPy
 > ## Hint
 > You can easily download the needed files by running the following commands:
 > ~~~shell
-> wget https://cern-cms-das-2023.github.io/cms-das-pre-exercises/code/FWLiteWithPythonConfig.cc -O $CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPythonConfig.cc
-> wget https://cern-cms-das-2023.github.io/cms-das-pre-exercises/code/parameters.py -O $CMSSW_BASE/src/parameters.py
+> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/FWLiteWithPythonConfig.cc -O $CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPythonConfig.cc
+> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/parameters.py -O $CMSSW_BASE/src/parameters.py
 > ~~~
 > {: . source}
 {: .callout}
@@ -156,7 +156,7 @@ Next, replace the existing `$CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPy
 > ## Note
 > In case you have completed [Exercise Set 3]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}) successfully, put the names and path of the `ROOT` files that you made yourself via submitting CRAB job, instead of those currently in `parameters.py`.
 > 
-> `parameters.py` will read from area `root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Input/DoubleMuon/`. You should have a similar location from where you can read your [CRAB][crab] output `ROOT` files. You can edit the `parameters.py` file to use the [MiniAOD][miniaod] files you made in [Exercise 13]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}#exercise-13---running-on-dataset-with-crab) by replacing the location of the input files. From my side, the files are stored in:
+> `parameters.py` will read from area `root://cmseos.fnal.gov//store/user/cmsdas/2024/pre_exercises/Set4/Input/DoubleMuon/`. You should have a similar location from where you can read your [CRAB][crab] output `ROOT` files. You can edit the `parameters.py` file to use the [MiniAOD][miniaod] files you made in [Exercise 13]({{ page.root }}{% link _episodes/03-CMSDataAnalysisSchoolPreExerciseThirdSet.md %}#exercise-13---running-on-dataset-with-crab) by replacing the location of the input files. From my side, the files are stored in:
 > ```
  '/eos/user/v/vmilosev/DoubleMuon/crab_CMSDAS_Data_analysis_test0/230421_160319/0000/slimMiniAOD_data_MuEle_1.root'
 > ```
@@ -213,8 +213,8 @@ The main intention of fitting the Z mass peak is to show how to fit a distributi
 > ## File list
 > ```
 > /afs/cern.ch/cms/Tutorials/TWIKI_DATA/CMSDataAnaSch/myZPeakCRAB.root # lxplus or Bari
-> root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Output/myZPeakCRAB.root # cmslpc
-> root://cmseos.fnal.gov//store/user/cmsdas/2023/pre_exercises/Set4/Output/myZPeakCRAB_fwlite.root # cmslpc
+> root://cmseos.fnal.gov//store/user/cmsdas/2024/pre_exercises/Set4/Output/myZPeakCRAB.root # cmslpc
+> root://cmseos.fnal.gov//store/user/cmsdas/2024/pre_exercises/Set4/Output/myZPeakCRAB_fwlite.root # cmslpc
 > ```
 {: .solution}
 
