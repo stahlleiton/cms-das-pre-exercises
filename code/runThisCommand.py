@@ -1,23 +1,19 @@
 #!/usr/bin/env python3
 
-import warnings
-warnings.filterwarnings('ignore', category=FutureWarning)
-
 import sys
 import zlib
-
 
 
 if len(sys.argv) < 2:
     print("Error: You must provide the secret key")
     sys.exit()
 
-key = ''.join(sys.argv[1:])
-crc32 = zlib.crc32(bytes(key,'utf-8'))
-key = 'asdf;klasdjf;kakjsdf;akjf;aksdljf;asldjfqewradsfafaw4efaefawefzdxffasdfw4ffawefawe4fawasdffadsfef'
-#print "crc32", crc32, crc32.__class__.__name__
+key = ''.join(sys.argv[1:]).encode()
+crc32 = zlib.crc32(key)
 
-if crc32 != zlib.crc32 (bytes(key,'utf-8')):
+key = b'asdf;klasdjf;kakjsdf;akjf;aksdljf;asldjfqewradsfafaw4efaefawefzdxffasdfw4ffawefawe4fawasdffadsfef'
+
+if crc32 != zlib.crc32 (key):
     print("Error: You didn't paste the correct input string")
     sys.exit()
 

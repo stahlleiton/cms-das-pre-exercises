@@ -20,7 +20,7 @@ keypoints:
 
 # Introduction
 
-Welcome to the first set of CMS Data Analysis School (CMSDAS) pre-exercises. The purpose of these exercises is to become familiar with the basic software tools required to perform physics analysis at the school. Please run and complete these exercises. Throughout the exercises there will be questions for you to answer. Submit your answers in the online response form available from **the course web area** - For CMSDAS@CERN {{ site.year }}, Fermilab, the complete set of links can be found at the [CMSDAS pre-exercises indico page](https://indico.cern.ch/e/cmsdas2024cern). A large amount of additional information about these topics is available in the twikis that we reference. Please remember that twikis evolve but aim to provide the best information at any time.
+Welcome to the first set of CMS Data Analysis School (CMSDAS) pre-exercises. The purpose of these exercises is to become familiar with the basic software tools required to perform physics analysis at the school. Please run and complete these exercises. Throughout the exercises there will be questions for you to answer. Submit your answers in the online response form available from **the course web area** - For CMSDAS@CERN {{ site.year }}, the complete set of links can be found at the [CMSDAS pre-exercises indico page](https://indico.cern.ch/e/cmsdas2024cern). A large amount of additional information about these topics is available in the twikis that we reference. Please remember that twikis evolve but aim to provide the best information at any time.
 
 > ## Note
 > The CMSDAS exercises (pre-exercises as well as exercises during the school) are intended to be as generic as possible. However, CMSDAS is held at different CMS collaborating institutes - e.g. CERN, the LPC at Fermilab, DESY, etc.) Participants are expected to request and obtain local (at the intended school location) computer accounts well in advance of the school start date, to ensure they will be able to work right away. **In the case of the CMSDAS@CERN {{ site.year }}, the computer account you should use for all exercises is the standard [CERN computing account](https://account.cern.ch/account)**. It is very important for participants to use the pre-exercises as a setup tool, so we recommend to **use the same laptop they intend to bring with them at the school** (no computer/laptop will be provided at the school), and to **connect to the CERN computing resources that will be used for the school**.
@@ -47,7 +47,7 @@ ssh -Y <YourUsername>@lxplus.cern.ch
 replacing `<YourUsername>` with your actual username. Enter the password. After a successful login, you should see the following message:
 ```shell
     * ********************************************************************
-    * Welcome to lxplus753.cern.ch, CentOS Linux release 7.9.2009 (Core)
+    * Welcome to lxplus952.cern.ch, Red Hat Enterprise Linux release 9.3 (Plow)
     * Archive of news is available in /etc/motd-archive
     * Reminder: you have agreed to the CERN
     *   computing rules, in particular OC5. CERN implements
@@ -55,18 +55,17 @@ replacing `<YourUsername>` with your actual username. Enter the password. After 
     *   https://cern.ch/ComputingRules
     * Puppet environment: production, Roger state: production
     * Foreman hostgroup: lxplus/nodes/login
-    * Availability zone: cern-geneva-b
+    * Availability zone: cern-geneva-a
     * LXPLUS Public Login Service - http://lxplusdoc.web.cern.ch/
-    * An AlmaLinux8 based lxplus8.cern.ch is now available
-    * An AlmaLinux9 based lxplus9.cern.ch is now available
     * Please read LXPLUS Privacy Notice in http://cern.ch/go/TpV7
+    * 2024-06-27 - lxplus7 CC7 termination https://cern.ch/otg0147045
     * ********************************************************************
 ```
 {: .source}
 
 As the exercises often require copying and pasting from instructions, we will make sure that you will have no problems. To verify if cut and paste to/from a terminal window works, first copy the script [runThisCommand.py]({{ page.root }}{% link code/runThisCommand.py %}) as follows. Once connected use the following command to copy the `runThisCommand.py` script and make it so that the script is executable (Mac/Linux/Windows):
 ```shell
-cp /afs/cern.ch/cms/Tutorials/CMSDASatCERN23/runThisCommand.py .
+cp /afs/cern.ch/cms/Tutorials/CMSDASatCERN24/runThisCommand.py .
 chmod +x runThisCommand.py
 ```
 {: .source}
@@ -125,11 +124,11 @@ The purpose of this exercise is to ensure that the user can edit files. We will 
 On the **lxplus** cluster, run:
 
 ```shell
-cp /afs/cern.ch/cms/Tutorials/CMSDASatCERN23/editThisCommand.py .
+cp /afs/cern.ch/cms/Tutorials/CMSDASatCERN24/editThisCommand.py .
 ```
 {: .source}
 
-Then open `editThisCommand.py` with your favorite editor (e.g. `emacs -nw editThisCommand.py`) and make sure that the 11th line has `#` (hash character) as the first character of the line. If not, explicitly change the following three lines:
+Then open `editThisCommand.py` with your favorite editor (e.g. `emacs -nw editThisCommand.py`) and make sure that the 8th line has `#` (hash character) as the first character of the line. If not, explicitly change the following three lines:
 
 ```python
 # Please comment the line below out by adding a '#' to the front of
