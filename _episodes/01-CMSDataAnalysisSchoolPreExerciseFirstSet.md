@@ -309,7 +309,7 @@ In this example, the dataset that we are looking for is the "MuonEG" dataset (wh
 In [DAS](https://cmsweb.cern.ch/das/) type:
 
 ```
-dataset=/MuonEG/*Run2024A*/MINIAOD*
+dataset=/MuonEG/*Run2023D*/MINIAOD*
 ```
 {: .source}
 
