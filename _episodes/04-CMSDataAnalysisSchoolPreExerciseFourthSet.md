@@ -67,7 +67,7 @@ In this exercise we will analyze the skimmed [MiniAODs][miniaod] created in the 
 > ```
 {: .solution}
 
-First we will add the [PhysicsTools](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuidePhysicsTools)/PatExamples package as follows to `<YOURWORKINGAREA>/CMSSW_13_1_4/src`. The `PatExamples` package has lot of examples for a user to try. However, we will add our own code and config file to it and then compile. To add this package, do this:
+First we will add the [PhysicsTools](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuidePhysicsTools)/PatExamples package as follows to `<YOURWORKINGAREA>/CMSSW_13_0_17/src`. The `PatExamples` package has lot of examples for a user to try. However, we will add our own code and config file to it and then compile. To add this package, do this:
 
 ```shell
 cd $CMSSW_BASE/src/
@@ -76,17 +76,17 @@ git cms-addpkg PhysicsTools/PatExamples
 {: .source}
 
 > ## Note
-> We are assuming that you've already checked out a CMSSW_13_1_4 release and have performed the `cmsenv` setup command.
+> We are assuming that you've already checked out a CMSSW_13_0_17 release and have performed the `cmsenv` setup command.
 {: .callout}
 
 In this package, you will find the python configuration file `$CMSSW_BASE/src/PhysicsTools/PatExamples/test/analyzePatBasics_cfg.py`. You will also see the EDAnalyzer in `$CMSSW_BASE/src/PhysicsTools/PatExamples/plugins/PatBasicAnalyzer.cc`.
 
-Next, create the following two files (download/save): [$CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc]({{ page.root }}{% link code/MyZPeakAnalyzer-CMSSW_13_1_4.cc %}) and [$CMSSW_BASE/src/MyZPeak_cfg.py]({{ page.root }}{% link code/MyZPeak_cfg.py %}).
+Next, create the following two files (download/save): [$CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc]({{ page.root }}{% link code/MyZPeakAnalyzer-CMSSW_13_0_17.cc %}) and [$CMSSW_BASE/src/MyZPeak_cfg.py]({{ page.root }}{% link code/MyZPeak_cfg.py %}).
 
 > ## Hint
 > A quick way to do this on Linux, or any machine with `wget`, is by using the following commands:
 > ~~~shell
-> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/MyZPeakAnalyzer-CMSSW_13_1_4.cc -O $CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc
+> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/MyZPeakAnalyzer-CMSSW_13_0_17.cc -O $CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc
 > wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/MyZPeak_cfg.py -O $CMSSW_BASE/src/MyZPeak_cfg.py
 > ~~~
 > {: .source}
@@ -173,7 +173,7 @@ scram b -j 4
 You should see among the output a line like the one below. If not, it is probable that you haven't compiled the code on which we are working.
 
 ```
->> Compiling  /your_path/YOURWORKINGAREA/CMSSW_13_1_4/src/PhysicsTools/FWLite/bin/FWLiteWithPythonConfig.cc
+>> Compiling  /your_path/YOURWORKINGAREA/CMSSW_13_0_17/src/PhysicsTools/FWLite/bin/FWLiteWithPythonConfig.cc
 ```
 {: .output}
 
@@ -320,7 +320,7 @@ The line `gStyle->SetOptFit(111111);`` enables all the histogram statistics to b
 
 ### Using a macro of your own in ROOT
 
-As you have seen above, we should fit a sub-range of the Z mass distribution because the fit in the full range is not all that great. In this exercise, we will fit a sub-range of the `mumuMass` distribution but for this we will use a `ROOT` macro. For more complex or useful fitting functions, one has to use a macro. The macro to run is [FitZPeak.C]({{ page.root }}{% link code/FitZPeak-CMSSW_13_1_4.C %}). This macro calls another macro, [BW.C]({{ page.root }}{% link code/BW.C %}). Please download/save them with the corresponding names in `$CMSSW_BASE/src`. Note that now the `myZPeakCRAB.root` file is opened by executing the macro itself, in addition to fitting the Z mass peak.
+As you have seen above, we should fit a sub-range of the Z mass distribution because the fit in the full range is not all that great. In this exercise, we will fit a sub-range of the `mumuMass` distribution but for this we will use a `ROOT` macro. For more complex or useful fitting functions, one has to use a macro. The macro to run is [FitZPeak.C]({{ page.root }}{% link code/FitZPeak-CMSSW_13_0_17.C %}). This macro calls another macro, [BW.C]({{ page.root }}{% link code/BW.C %}). Please download/save them with the corresponding names in `$CMSSW_BASE/src`. Note that now the `myZPeakCRAB.root` file is opened by executing the macro itself, in addition to fitting the Z mass peak.
 
 To run this macro execute the following command from the `$CMSSW_BASE/src` directory:
 
@@ -389,7 +389,7 @@ float massMAX = 96.0;
 
 ### Using a macro in RooFit
 
-Before we start, have a look at the [RooFit twiki](https://twiki.cern.ch/twiki/bin/view/CMS/RooFit) to get a feeling for it. Then save the macro [RooFitMacro.C]({{ page.root }}{% link code/RooFitMacro-CMSSW_13_1_4.C %}) in the `$CMSSW_BASE/src/` directory. This macro will fit the Z mass peak using `RooFit`.
+Before we start, have a look at the [RooFit twiki](https://twiki.cern.ch/twiki/bin/view/CMS/RooFit) to get a feeling for it. Then save the macro [RooFitMacro.C]({{ page.root }}{% link code/RooFitMacro-CMSSW_13_0_17.C %}) in the `$CMSSW_BASE/src/` directory. This macro will fit the Z mass peak using `RooFit`.
 
 Take a look at the code and then execute the following:
 

@@ -35,7 +35,7 @@ The MC file is called **DYJetsToLL**. You will need to get used to cryptic names
 **We assume that having done the first set of pre-exercises by now, one is comfortable with logging onto** `cmslpc-sl7.fnal.gov` **and setting up the cms environment.**
 
 # Exercise 7 - Slim MiniAOD sample to reduce its size by keeping only Muon and Electron branches
-In order to reduce the size of the [MiniAOD](https://twiki.cern.ch/twiki/bin/view/CMS/MiniAOD) we would like to keep only the slimmedMuons and slimmedElectrons objects and drop all others. The config files should now look like [slimMiniAOD_MC_MuEle_cfg.py]({{ page.root }}{% link code/slimMiniAOD_MC_MuEle_cfg.py %}) and [slimMiniAOD_data_MuEle_cfg.py]({{ page.root}}{% link code/slimMiniAOD_data_MuEle_cfg.py %}). To work with this config file and make the slim MiniAOD, execute the following steps in the directory `YOURWORKINGAREA/CMSSW_13_1_4/src`
+In order to reduce the size of the [MiniAOD](https://twiki.cern.ch/twiki/bin/view/CMS/MiniAOD) we would like to keep only the slimmedMuons and slimmedElectrons objects and drop all others. The config files should now look like [slimMiniAOD_MC_MuEle_cfg.py]({{ page.root }}{% link code/slimMiniAOD_MC_MuEle_cfg.py %}) and [slimMiniAOD_data_MuEle_cfg.py]({{ page.root}}{% link code/slimMiniAOD_data_MuEle_cfg.py %}). To work with this config file and make the slim MiniAOD, execute the following steps in the directory `YOURWORKINGAREA/CMSSW_13_0_17/src`
 
 Cut and paste the script [slimMiniAOD_MC_MuEle_cfg.py]({{ page.root }}{% link code/slimMiniAOD_MC_MuEle_cfg.py %}) and [slimMiniAOD_data_MuEle_cfg.py]({{ page.root}}{% link code/slimMiniAOD_data_MuEle_cfg.py %}) in its entirety and save it with the same name. Open with your favorite editor and take a look at these python files. The number of events has been set to 1000:
 
@@ -144,7 +144,7 @@ To quit ROOT application, execute:
 > What is the size of the slimmed output file compared to the original sample?
 {: .challenge}
 
-Compare one of your slimmed output files to the original MiniAOD file it came from. To find sizes of the files in EOS, you can use e.g., [`edmFileUtil -l root://cms-xrd-global.cern.ch///store/user/filepath/filename.root`](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookEdmUtilities#edm_FileUtil) with the appropriate path and filename.
+Compare one of your slimmed output files to the original MiniAOD file it came from. To find sizes of the files in EOS, you can use e.g., [`edmFileUtil -l root://cms-xrd-global.cern.ch//store/user/filepath/filename.root`](https://twiki.cern.ch/twiki/bin/view/CMSPublic/WorkBookEdmUtilities#edm_FileUtil) with the appropriate path and filename.
 
 > ## Question 7.3b
 > Is the mean eta of muons for MC and data the same as in the MC and data samples in Exercise 6?
@@ -226,7 +226,7 @@ The data is registered in the file but is not available for this event
 ```
 {: .output}
 
-This error occurs because your input files `slimMiniAOD_MC_MuEle.root` is a [MiniAOD](https://twiki.cern.ch/twiki/bin/view/CMS/MiniAOD) and does not contain reco::Muon whose label is muons. It contains, however, slimmedMuons (check yourself by opening the root file with ROOT browser). However, in the code [FWLiteHistograms.cc](https://github.com/cms-sw/cmssw/blob/CMSSW_13_1_4/PhysicsTools/FWLite/bin/FWLiteHistograms.cc) there are lines that say:
+This error occurs because your input files `slimMiniAOD_MC_MuEle.root` is a [MiniAOD](https://twiki.cern.ch/twiki/bin/view/CMS/MiniAOD) and does not contain reco::Muon whose label is muons. It contains, however, slimmedMuons (check yourself by opening the root file with ROOT browser). However, in the code [FWLiteHistograms.cc](https://github.com/cms-sw/cmssw/blob/CMSSW_13_0_17/PhysicsTools/FWLite/bin/FWLiteHistograms.cc) there are lines that say:
 
 ```
 using reco::Muon;
@@ -300,7 +300,7 @@ You can see that now it runs successfully and you get a ROOT file with a histogr
 In the command above, it is obvious that `slimMiniAOD_MC_MuEle.root` is the input file, `ZPeak_MC.root` is output file. `maxEvents` is the events you want to run over. You can change it any other number. The option `-1` means running over all the events which is 1000 in this case. `outputEvery` means after how any events should the code report the number of event being processed. As you may have noticed, as you specified, when your executable runs, it says `processing event:` after every 100 events.
 
 
-If you look at the code [FWLiteHistograms.cc](https://github.com/cms-sw/cmssw/blob/CMSSW_13_1_4/PhysicsTools/FWLite/bin/FWLiteHistograms.cc) , it also contains the defaults corresponding to the above command line options. Answer the following question:
+If you look at the code [FWLiteHistograms.cc](https://github.com/cms-sw/cmssw/blob/CMSSW_13_0_17/PhysicsTools/FWLite/bin/FWLiteHistograms.cc) , it also contains the defaults corresponding to the above command line options. Answer the following question:
 
 
 > ## Question 8.2

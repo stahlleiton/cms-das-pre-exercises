@@ -206,8 +206,8 @@ export SCRAM_ARCH=el9_amd64_gcc11
 ### Alternatively, If you are using the default tcsh shell (or csh shell)
 setenv SCRAM_ARCH el9_amd64_gcc11
 ### Then, in both cases:
-cmsrel CMSSW_13_1_4
-cd CMSSW_13_1_4/src
+cmsrel CMSSW_13_0_17
+cd CMSSW_13_0_17/src
 cmsenv
 ```
 {: .source}
@@ -251,13 +251,13 @@ echo $CMSSW_BASE
 {: .challenge}
 
 > ## Note
-> The directory (on **lxplus**) `/eos/user/<initial>/<username>/CMSSW_13_1_4/src` is referred to as your *WORKING DIRECTORY*.
+> The directory (on **lxplus**) `/eos/user/<initial>/<username>/CMSSW_13_0_17/src` is referred to as your *WORKING DIRECTORY*.
 {: .callout}
 
 Every time you log out or exit a session you will need to setup your environment in your working directory again. To do so, once you have executed the steps above for the first time (assuming you have added the `source /cvmfs/cms.cern.ch/cmsset_default.(c)sh` in your `~/.tcshrc` or `~/.bash_profile` file), you can simply do:
 
 ```shell
-cd /eos/user/<initial>/<username>/CMSSW_13_1_4/src
+cd /eos/user/<initial>/<username>/CMSSW_13_0_17/src
 cmsenv
 ```
 {: .source}
@@ -266,21 +266,21 @@ And you are ready to go!
 
 # Exercise 4 - Find data in the Data Aggregation Service (DAS)
 
-In this exercise we will locate the MC dataset **RelValZMM** and the collision dataset **/DoubleMuon/Run2018A-12Nov2019_UL2018-v2/MINIAOD** using the **Data Aggregation Service** (not to be confused with the **Data Analysis School** in which you are partaking!).
+In this exercise we will locate the MC dataset **RelValZMM** and the collision dataset **/MuonEG/Run2023D-22Sep2023_v2-v1/MINIAOD** using the **Data Aggregation Service** (not to be confused with the **Data Analysis School** in which you are partaking!).
 
 Go to the [DAS](https://cmsweb.cern.ch/das/) webpage. You will be asked for your Grid certificate, which you should have loaded into your browser by now. Also note that there may be a security warning message, which you will need to ignore and still load the page. From there, enter the following into the space provided:
 
 ```
-dataset release=CMSSW_10_6_14 dataset=/RelValZMM*/*CMSSW_10_6_14*/MINIAOD*
+dataset release=CMSSW_13_0_12 dataset=/RelValZMM*/*CMSSW_13_0_12*/MINIAOD*
 ```
 {: .source}
 
-This will search for datasets, processed with release `CMSSW_10_6_14`, which is named like `/RelValZMM*/*CMSSW_10_6_14*/MINIAOD*`. The syntax for searches is found [here](https://cmsweb.cern.ch/das/faq), with many useful common search patterns under "CMS Queries".
+This will search for datasets, processed with release `CMSSW_13_0_12`, which is named like `/RelValZMM*/*CMSSW_13_0_12*/MINIAOD*`. The syntax for searches is found [here](https://cmsweb.cern.ch/das/faq), with many useful common search patterns under "CMS Queries".
 
-For this query, several results should be displayed (you may be queried for security exceptions in the process). Select (click) on the dataset name **/RelValZMM_13/CMSSW_10_6_14-106X_mc2017_realistic_v7-v1/MINIAODSIM** and after a few seconds another page will appear.
+For this query, several results should be displayed (you may be queried for security exceptions in the process). Select (click) on the dataset name **/RelValZMM_PU_13p6/CMSSW_13_0_12-PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/MINIAODSIM** and after a few seconds another page will appear.
 
 > ## Question 4.1a
-> What is the size of this (/RelValZMM_13/CMSSW_10_6_14-106X_mc2017_realistic_v7-v1/MINIAODSIM)dataset in MB? Make sure your answer is only numerical (no units)
+> What is the size of this (/RelValZMM_PU_13p6/CMSSW_13_0_12-PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/MINIAODSIM)dataset in MB? Make sure your answer is only numerical (no units)
 {: .challenge}
 
 > ## Question 4.1b
@@ -290,14 +290,14 @@ For this query, several results should be displayed (you may be queried for secu
 Back in the main dataset page, click on the "Files" link to get a list of the ROOT files in our selected dataset. One of the files contained in the dataset should look like this:
 
 ```
-/store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root
+/store/relval/CMSSW_13_0_12/RelValZMM_PU_13p6/MINIAODSIM/PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/2580000/04fe653a-2d22-4526-bc70-334a68fa810f.root
 ```
 {: .output}
 
 If you want to know the name of the dataset from the name of a file, one can go to [DAS][das] and type:
 
 ```
-dataset file=/store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root
+dataset file=/store/relval/CMSSW_13_0_12/RelValZMM_PU_13p6/MINIAODSIM/PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/2580000/04fe653a-2d22-4526-bc70-334a68fa810f.root
 ```
 {: .source}
 
@@ -316,12 +316,12 @@ dataset=/MuonEG/*Run2024A*/MINIAOD*
 and hit "Enter".
 
 > ## Question 4.2
-> What release was the dataset **/MuonEG/Run2024A-PromptReco-v2/MINIAOD** collected in?
+> What release was the dataset **/MuonEG/Run2023D-22Sep2023_v2-v1/MINIAOD** collected in?
 >
 > **Note:** If you see more than one release, just answer with a single release.
 {: .challenge}
 
-Having set your CMSSW environment one can also search for the dataset **/MuonEG/Run2024A-PromptReco-v2/MINIAOD** by invoking the [DAS][das] command in your *WORKING DIRECTORY*. The [DAS][das] command `dasgoclient` is in the path for CMSSW_9_X_Y versions and above, so you do not need to download anything additional. More about `dasgoclient` can be found [here](https://cmsweb.cern.ch/das/faq).
+Having set your CMSSW environment one can also search for the dataset **/MuonEG/Run2023D-22Sep2023_v2-v1/MINIAOD** by invoking the [DAS][das] command in your *WORKING DIRECTORY*. The [DAS][das] command `dasgoclient` is in the path for CMSSW_9_X_Y versions and above, so you do not need to download anything additional. More about `dasgoclient` can be found [here](https://cmsweb.cern.ch/das/faq).
 
 First, we need to initialize the Grid proxy:
 
@@ -333,14 +333,14 @@ voms-proxy-init --valid 192:00 --voms cms
 You will be asked for your grid certificate passphrase. Then you can execute the query with:
 
 ```shell
-dasgoclient --query="dataset=/MuonEG/Run2024A-PromptReco-v2/MINIAOD" --format=plain
+dasgoclient --query="dataset=/MuonEG/Run2023D-22Sep2023_v2-v1/MINIAOD" --format=plain
 ```
 {: .source}
 
 You will see something like:
 
 ```
-/MuonEG/Run2024A-PromptReco-v2/MINIAOD
+/MuonEG/Run2023D-22Sep2023_v2-v1/MINIAOD
 ```
 {: .output}
 
@@ -364,7 +364,7 @@ To open a file from the `MuonEG` 2024A file (stored at CERN), with ROOT:
 
 ```shell
 root -l
-TFile *f =TFile::Open("root://cms-xrd-global.cern.ch///store/data/Run2024A/MuonEG/MINIAOD/PromptReco-v2/000/366/323/00000/f2b1462f-6d41-4b11-b8e3-7624af2e29bf.root");
+TFile *f =TFile::Open("root://cms-xrd-global.cern.ch//store/data/Run2023D/MuonEG/MINIAOD/22Sep2023_v2-v1/2540000/6d3ce926-9f9b-48d5-9f87-9f53a729859c.root");
 ```
 {: .source}
 
@@ -377,7 +377,7 @@ Warning in <TClass::Init>: no dictionary for class pat::TauJetCorrFactors is ava
 Soon we will learn how to properly deal with the NanoAOD file format. Similarly, you can open the `RelValZMM_13` file that we previously located at FNAL:
 
 ```shell
-TFile *f =TFile::Open("root://cms-xrd-global.cern.ch///store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root");
+TFile *f =TFile::Open("root://cms-xrd-global.cern.ch//store/relval/CMSSW_13_0_12/RelValZMM_PU_13p6/MINIAODSIM/PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/2580000/04fe653a-2d22-4526-bc70-334a68fa810f.root");
 ```
 {: .source}
 
@@ -394,7 +394,7 @@ Next we will use `edmDumpEventContent` to dump a summary of the products that ar
 If you want to look at a specific object (say, *slimmedMuons*), then execute:
 
 ```shell
-edmDumpEventContent --all --regex slimmedMuons root://cms-xrd-global.cern.ch//store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root
+edmDumpEventContent --all --regex slimmedMuons root://cms-xrd-global.cern.ch//store/relval/CMSSW_13_0_12/RelValZMM_PU_13p6/MINIAODSIM/PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/2580000/04fe653a-2d22-4526-bc70-334a68fa810f.root
 ```
 {: .source}
 
@@ -414,7 +414,7 @@ The output of `edmDumpEventContent` has information divided into four variable w
 Instead of the above, let us try without the option `--regex slimmedMuons`. This will dump the entire event content - a file with many lines. For this reason we'll send the output to a file called `EdmDumpEventContent.txt` with a UNIX output redirection command (then you can inspect the file with your favorite editor or with `less EdmDumpEventContent.txt`:
 
 ```shell
-edmDumpEventContent root://cms-xrd-global.cern.ch//store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root > EdmDumpEventContent.txt
+edmDumpEventContent root://cms-xrd-global.cern.ch//store/relval/CMSSW_13_0_12/RelValZMM_PU_13p6/MINIAODSIM/PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/2580000/04fe653a-2d22-4526-bc70-334a68fa810f.root > EdmDumpEventContent.txt
 ```
 {: .source}
 
@@ -435,7 +435,7 @@ To aid in understanding the full history of an analysis, the framework accumulat
 To do this on **lxplus** execute:
 
 ```shell
-edmProvDump root://cms-xrd-global.cern.ch//store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root > EdmProvDump.txt
+edmProvDump root://cms-xrd-global.cern.ch//store/relval/CMSSW_13_0_12/RelValZMM_PU_13p6/MINIAODSIM/PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/2580000/04fe653a-2d22-4526-bc70-334a68fa810f.root > EdmProvDump.txt
 ```
 {: .source}
 
@@ -454,7 +454,7 @@ Finally we will execute `edmEventSize` to determine the size of different branch
 At **lxplus** execute the following command:
 
 ```shell
-edmEventSize -v `edmFileUtil -d root://cmsxrootd-site.fnal.gov//store/relval/CMSSW_10_6_14/RelValZMM_13/MINIAODSIM/106X_mc2017_realistic_v7-v1/10000/0EB976F4-F84B-814D-88DA-CB2C29A52D72.root` > EdmEventSize.txt
+edmEventSize -v `edmFileUtil -d root://cms-xrd-global.cern.ch//store/relval/CMSSW_13_0_12/RelValZMM_PU_13p6/MINIAODSIM/PU_130X_mcRun3_2023_realistic_relvals2023D_v2_RV201-v1/2580000/04fe653a-2d22-4526-bc70-334a68fa810f.root` > EdmEventSize.txt
 ```
 {: .source}
 
