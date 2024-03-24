@@ -86,8 +86,8 @@ Next, create the following two files (download/save): [$CMSSW_BASE/src/PhysicsTo
 > ## Hint
 > A quick way to do this on Linux, or any machine with `wget`, is by using the following commands:
 > ~~~shell
-> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/MyZPeakAnalyzer-CMSSW_13_0_17.cc -O $CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc
-> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/MyZPeak_cfg.py -O $CMSSW_BASE/src/MyZPeak_cfg.py
+> wget https://stahlleiton.github.io/cms-das-pre-exercises/code/MyZPeakAnalyzer-CMSSW_13_0_17.cc -O $CMSSW_BASE/src/PhysicsTools/PatExamples/src/MyZPeakAnalyzer.cc
+> wget https://stahlleiton.github.io/cms-das-pre-exercises/code/MyZPeak_cfg.py -O $CMSSW_BASE/src/MyZPeak_cfg.py
 > ~~~
 > {: .source}
 {: .callout}
@@ -147,8 +147,8 @@ Next, replace the existing `$CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPy
 > ## Hint
 > You can easily download the needed files by running the following commands:
 > ~~~shell
-> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/FWLiteWithPythonConfig.cc -O $CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPythonConfig.cc
-> wget https://cern-cms-das-2024.github.io/cms-das-pre-exercises/code/parameters.py -O $CMSSW_BASE/src/parameters.py
+> wget https://stahlleiton.github.io/cms-das-pre-exercises/code/FWLiteWithPythonConfig.cc -O $CMSSW_BASE/src/PhysicsTools/FWLite/bin/FWLiteWithPythonConfig.cc
+> wget https://stahlleiton.github.io/cms-das-pre-exercises/code/parameters.py -O $CMSSW_BASE/src/parameters.py
 > ~~~
 > {: . source}
 {: .callout}
