@@ -50,8 +50,8 @@ For CMSDAS@CERN {{ site.year }} please submit your answers for the [CMSDAS@CERN 
 > team in order to be able to see (or find using the search
 > channels functionality) the channels setup for communications
 > related to the school. The sign-up link is
-> [here](https://mattermost.web.cern.ch/signup_user_complete/?id=yxyqcyputby3ig9rzxsqyjoi1e&md=link&sbr=su)
-> and the Pre-exercises channel can be found [here](https://mattermost.web.cern.ch/cmsdascern2024/channels/pre-exercises).
+> [here](https://mattermost.web.cern.ch/signup_user_complete/?id=b55co49j3tbgmb3w9xf9afau1a&md=link&sbr=su)
+> and the Pre-exercises channel can be found [here](https://mattermost.web.cern.ch/cmsdas24/channels/pre-exercises).
 >
 {: .testimonial}
 <!-- {: .support} -->

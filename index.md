@@ -219,7 +219,7 @@ special instructions.
 </p>
 
 <p id="chat">
-   <strong>Mattermost chat:</strong> The <a href="https://mattermost.web.cern.ch/cmsdascern2024/channels/pre-exercises">PreExercises</a> channel will be available once you join the CMSDAS@CERN 2024 team. Direction for how to join this Mattermost chat team can be found on the <a href="setup.html">setup</a> page.
+   <strong>Mattermost chat:</strong> The <a href="https://mattermost.web.cern.ch/cmsdas24/channels/pre-exercises">PreExercises</a> channel will be available once you join the CMSDAS@CERN 2024 team. Direction for how to join this Mattermost chat team can be found on the <a href="setup.html">setup</a> page.
 </p>
 
 {% comment %}
